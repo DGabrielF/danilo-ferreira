@@ -1,0 +1,638 @@
+{
+  "personal": {
+    "name": "Danilo Gabriel Fagundes de Oliveira Ferreira",
+    "profession": ["engenheiro químico", "desenvolvedor"],
+    "gender": "homem",
+    "jokes": [
+      "Aprendiz de mago.",
+      "Aspirante à toque de Midas.",
+      "Pokemon em evolução.",
+      "Comece onde está.",
+      "Use o que você tem.",
+      "Faça o que você pode.",
+      "Uma metamorfose ambulante...",
+      "Que tal um pouco de alquimia?",
+      "O obstáculo é o caminho!",
+      "Não existe atalhos no mundo ninja..."
+    ],
+    "civilStatus": "casado",
+    "birth": "1992-05-11T00:00:00.000Z"
+  },
+  "introduction": {
+    "aboutMe": "Focado e instigado por desafios, encontrar uma forma de tornar processos, ferramentas, procedimentos e pessoas melhores é o meu 'PORQUÊ'. Engenheiro com experiência em programação",
+    "abstract": "Sou formado pela Universidade Federal da Bahia, onde graduei em Engenharia Química. Durante meu tempo no setor de P&D de um hospital, tive a oportunidade de participar de projetos desafiadores, que exigiam soluções inovadoras e criativas. Entre eles, o desenvolvimento de um sistema que automatizou processos cruciais, incluindo leitura de e-mails, preenchimento de planilhas, alertas de consumo, monitoramento de sensores e interfaces gráficas. Isso permitiu a expansão do meu conhecimento em estruturas de bancos de dados, análise estatística e experiência do usuário, utilizando linguagens como Python e JavaScript, além de desenvolver habilidades sólidas em resolução de problemas e gestão de recursos."
+  },
+  "education": [
+    {
+      "title": "Bacharel em Engenharia Química",
+      "providedBy": "Universidade Federal da Bahia",
+      "concludedIn": "25/06/2021"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Desenvolvimento de Softwares",
+      "origin": "Durante a minha adolescência comecei a ser fã de jogos e isso me despertou um enorme interesse em como eles eram construídos e o poder que tinham de contar histórias, o meu primeiro contato com a programação foi realizando um servidor modificado de um jogo. Mais tarde eu pude desenvolver aplicações que me ajudaram a realizar minhas tarefas com excelência.",
+      "achievements": [
+        "Análise crítica dos cenários",
+        "Criatividade para criar solução",
+        "Um porquê como combustível"
+      ]
+    },
+    {
+      "name": "Automação de processos",
+      "origin": "Na minha primeira experiência profissional, após a formatura, eu me tornei responsável pela parte administrativa de materiais de manutenção hospitalar. Só que ficar preenchendo planilhas e conferindo as notas uma por uma para saber em que situação estão. Resolvi fazer diferente, gastar meu tempo pra deixar algo ao invés de só manter as coisas.",
+      "achievements": [
+        "Aplicar uma paixão (programação) para resolver um problema",
+        "Realizar automações de rotinas administrativas com Python",
+        "Facilitar a minha vida e a vida dos meus colegas"
+      ]
+    },
+    {
+      "name": "Melhoria Contínua",
+      "origin": "Durante a faculdade, cursei uma disciplina que falava sobre sustentabilidade, sobre os recursos e sobre os planetas. Ela parecia distoar de todas as outras disciplinas do curso, e todos pensavam isso, creio eu. Mas enquanto todos analisavam financeiramente os projetos, eu comecei a me questionar sobre a economia gerada pela sustentabilidade. E enquanto buscava um emprego após a faculdade fiz alguns cursos voltados ao Lean e Six Sigma, que corroboraram através de uma visão mais pé no chão com a ideia de otimizar os processos",
+      "achievements": [
+        "Cada projeto que desenvolvi teve como base a redução de desperdícios",
+        "Enxergar os obstáculos como o caminho para o crescimento",
+        "Resultados como argumentos"
+      ]
+    },
+    {
+      "name": "Gestão de projetos",
+      "origin": "Na minha primeira experiência, quando fiquei encarregado de uma tarefa rotineira, eu tive a necessidade de fazer aquilo de outra forma, meu superior direto me disse: Faz o seu trabalho do melhor jeito que puder. E isso foi maravilhoso, inclusive agradeço a ele pela grande gestão e espaço de crescimento. Então me juntei com os estagiários e elaboramos um plano de ação, prazos, requisitos necessários e foi maravilhoso entregar meu primeiro projeto e ser indicado ao prêmio de inovação da empresa",
+      "achievements": [
+        "Desenho de projeto",
+        "Trabalho em equipe",
+        "Divisão de tarefas",
+        "Apresentação de resultados",
+        "Melhoria de projetos"
+      ]
+    },
+    {
+      "name": "Design de Processos Industriais",
+      "origin": "Durante meu estágio, a minha atividade principal era estudar o processo de separação da mistura de óleo e água. Então estudei cada etapa do processo, o que chegava, como chegava, quem enviava, o que acontecia, o que saía e para onde ia. Isso me fez conhecer e estudar muitos equipamentos envolvidos no processo de separação para que a empresa pudesse definir as especificações de cada equipamento de acordo com suas dimensões",
+      "achievements": [
+        "Fluxos de processos",
+        "Equipamentos de separação e tratamento de efluentes",
+        "Análise de mercado"
+      ]
+    },
+    {
+      "name": "Pacote Office",
+      "origin": "Desde o estágio, onde fiz a transição do fluxo de caixa para o meio digital e criei os primeiros documentos padronizados dos equipamentos. Venho aprendendo mais ferramentas que auxiliam no dia a dia profissional e pessoal a cada necessidade que surge.",
+      "achievements": [
+        "Estruturação de bancos de dados",
+        "Tabelas dinâmicas",
+        "Dashboards",
+        "Macros",
+        "Apresentação",
+        "Relatórios",
+        "Libre Office",
+        "Microsoft Office"
+      ]
+    }
+  ],
+  "languages": [
+    {"name": "português", "level": "nativo"},
+    {"name": "inglês", "level": "A2"}
+  ],
+  "contacts": [
+    {"name": "Whatsapp", "url": "5571993210108", "text": "(71) 99321-0108"},
+    {"name": "Email", "url": "mailto:danilofof@gmail.com", "text": "danilofof@gmail.com"},
+    {"name": "GitHub", "url": "http://github.com/DGabrielF", "text": "/DGabrielF"},
+    {"name": "Linkedin", "url": "https://www.linkedin.com/in/danilo-ferreira-092457127", "text": "/danilo-ferreira-092457127"},
+    {"name": "Facebook", "url": "https://www.facebook.com/danilo.ferreira.186590", "text": "/danilo.ferreira.186590"}
+  ],
+  "experiences": [
+    {
+      "position": "Trainee em Pesquisa e Desenvolvimento",
+      "company": "Liga Álvaro Bahia Contra a Mortalidade Infantil",
+      "alias": "LABCMI",
+      "activities": [
+        "Responsável pela gestão de materiais de manutenção hospitalar (água, energia, gases medicinais, diesel) e estudo de viabilidade para projetos de eficiência no consumo.",
+        "Desenvolvimento de softwares para acompanhamento de notas, estoque e medidores, geração de relatórios automáticos."
+      ],
+      "developedProjects": [
+        {
+          "name": "NIX",
+          "slug": "nix",
+          "spotlight": true,
+          "excerpt": "Gerenciar materiais hospitalares utilizando uma interface mais amigável, reduzindo o risco de falhas na digitação, automatizar atividades rotineiras como verificação de email e preenchimento de planilhas.",
+          "description": "Esta aplicação foi desenvolvida para otimizar e simplificar o processo de gestão de notas fiscais, atendendo a uma variedade de objetivos-chave. Utilizando uma abordagem centrada no cliente, combinada com análise detalhada de falhas, o projeto foi cuidadosamente desenhado e implementado utilizando uma variedade de ferramentas e tecnologias. Com o objetivo de reduzir significativamente o tempo gasto na atualização de planilhas e minimizar erros de digitação, a aplicação emprega recursos avançados de processamento de dados utilizando Python, incluindo bibliotecas como Numpy e Pandas. Além disso, a integração com um banco de dados gerenciado de forma eficiente permite um armazenamento seguro e acessível das informações relacionadas às notas fiscais. Para evitar que notas fiscais fiquem sem registro e facilitar sua localização, a aplicação utiliza uma combinação de técnicas de indexação e busca eficazes, proporcionando aos usuários uma maneira rápida e intuitiva de encontrar as informações necessárias. A interface do usuário foi desenvolvida com a biblioteca Tkinter, garantindo uma experiência fluida e amigável para os usuários finais. Além disso, a aplicação implementa funcionalidades de monitoramento do estado das notas fiscais, auxiliando os usuários na visualização e acompanhamento do fluxo de trabalho. A comunicação por email é automatizada através da biblioteca Smtplib, permitindo notificações instantâneas sobre atualizações importantes ou ações necessárias. Por fim, a documentação abrangente da aplicação garante que os usuários possam entender completamente suas funcionalidades e como utilizá-las de maneira eficaz, contribuindo para uma adoção suave e uma utilização otimizada. Em resumo, esta aplicação oferece uma solução abrangente e eficiente para simplificar o gerenciamento de notas fiscais, reduzindo o tempo e os esforços necessários, minimizando erros e proporcionando uma melhor visibilidade e controle sobre o processo.",
+          "goals": [
+            "Reduzir o tempo utilizado para atualizar planilhas",
+            "Reduzir erros de digitação",
+            "Evitar que notas fiscais ficassem sem registro",
+            "Facilitar a localização de notas",
+            "Auxiliar na visualização do estado das notas."
+          ],
+          "usedTools": [
+            "Voz do cliente",
+            "Análise de falhas",
+            "Gerenciamento de banco de dados",
+            "Ferramentas de priorização",
+            "Desenho do projeto",
+            "Python",
+            "Numpy",
+            "Pandas",
+            "Tkinter",
+            "Smtplib",
+            "Firebase",
+            "Documentação da aplicação"
+          ]
+        },
+        {
+          "name": "COCITE",
+          "slug": "cocite",
+          "spotlight": true,
+          "excerpt": "Maximizar a credibilidade do controle de temperatura dos equipamentos de resfriamento! Diagnósticos precisos, relatórios estatísticos e recomendações claras.",
+          "description": "Desenvolvemos uma aplicação para elevar a credibilidade do controle de temperatura dos equipamentos frigoríficos, especialmente perante os órgãos fiscalizadores. Utilizando uma abordagem avançada, nossa solução requisita periodicamente dados em tempo real de um banco de dados de monitoramento, alimentado por sensores de temperatura conectados via wi-fi, permitindo um diagnóstico preciso do comportamento dos refrigeradores conforme as intervalos de temperatura permitidas. Com o poder da análise estatística e da elaboração de indicadores, nossa aplicação gera relatórios abrangentes, fornecendo não apenas dados estatísticos detalhados, mas também diagnósticos de comportamento e recomendações claras sobre as medidas a serem tomadas, caso necessário. Tudo isso é possível graças à integração perfeita de tecnologias avançadas, incluindo Python, Numpy, Pandas e Matplotlib. Prepare-se para elevar o padrão do controle de temperatura da sua empresa e enfrentar os desafios regulatórios com confiança!",
+          "goals": [
+            "Elevar a credibilidade do controle de temperatura da empresa em vista do órgão fiscalizador",
+            "Requisitar periodicamente os dados de um banco de dados em tempo real de monitoramento",
+            "Diagnosticar o comportamento dos refrigeradores de acordo com os intervalos de temperatura permitidas",
+            "Geração de um relatório com dados estatísticos, diagnóstico de comportamento e atitudes a serem tomadas, caso necessário."
+          ],
+          "usedTools": [
+            "Consumo de dados de API",
+            "Padronização de documentos",
+            "Análise estatística",
+            "Elaboração de indicadores",
+            "Python",
+            "Numpy",
+            "Pandas",
+            "Matplotlib"
+          ]
+        },
+        {
+          "name": "TÁCITA",
+          "slug": "tacita",
+          "spotlight": false,
+          "excerpt": "Realizar uma análise dos níveis de ruído a rotina nas UTI's Neonatais. Projeto que daria base para um estudo na relação de causa efeito do ruído em ocorrências com pacientes.",
+          "description": "Desenvolvimento de dispositivos, que além de alertar com sinais visuais sobre a ultrapassagem de um nível configurado de ruído também enviam dados em tempo real para um InfluxDB. Software para fazer a conexão com o Grafana para apresentação dos dados em tempo real, geração de um banco de dados para estudo compontamental dos setores monitorados.",
+          "goals": [
+            "Mapear o sistema de monitoramento de ruído para replicação",
+            "Replicar o dispositivo"
+          ],
+          "usedTools": [
+            "Componentes eletrônicos",
+            "Conexões eletrônicas",
+            "Desenho técnico"
+          ]
+        },
+        {
+          "name": "Treinamento em SolidWorks",
+          "slug": "solidworkds",
+          "spotlight": false,
+          "excerpt": "Iniciar um programa de capacitação interna. Com a intenção de atender as necessidades do setor e do Hospital.",
+          "description": "Gerar material para treinamento",
+          "goals": [
+            "Iniciar um processo de treinamento interno",
+            "Desenvolver modelos de peças de equipamentos para a impressora 3D"
+          ],
+          "usedTools": [
+            "Desenho técnico",
+            "Modelagem 3D"
+          ]
+        }
+      ]
+    },
+    {
+      "position": "Estagiário de Processos",
+      "company": "Fluxotécnica Equipamentos Industriais LTDA",
+      "alias": "Fluxotécnica",
+      "activities": [
+        "Migração de documentos para o meio digital (fluxo de caixa, fichas técnicas e procedimentos operacionais).",
+        "Documentação das fichas técnicas dos equipamentos.",
+        "Dimensionamento e pesquisa de mercado para equipamentos de separação.",
+        "Mapeamento de fluxo dos processos de separação e de tratamento de efluentes."
+      ],
+      "developedProjects": [
+        {
+          "name": "Fluxo de caixa",
+          "slug": "fluxo-de-caixa",
+          "spotlight": false,
+          "excerpt": "Estruturação e digitalização de dados financeiros. Maximizando a eficiência e confiabilidade atravéz do gerenciamento otimizados dos dados.",
+          "description": "Estruturar nosso banco de dados e transcrever dados físicos para o meio digital. Para isso, estamos utilizando ferramentas avançadas de gerenciamento de banco de dados, garantindo que nossa estrutura seja sólida, eficiente e capaz de suportar nossas necessidades em constante evolução. ",
+          "goals": [
+            "Estruturar o banco de dados",
+            "Transcrever os dados físicos para o meio digital"
+          ],
+          "usedTools": [
+            "Gerenciamento de banco de dados",
+            "Microsoft Excel"
+          ]
+        },
+        {
+          "name": "Análise da cadeia de extração de óleo",
+          "slug": "petroleo",
+          "spotlight": false,
+          "excerpt": "Estudo da cadeia de extração de óleo, para detecção de nichos de mercado.",
+          "description": "Realizar o levantamento dos principais formatos de tratamento de óleo extraído nas modalidades onshore e offshore, descrever os equipamentos que fazer parte do processo e realizar um estudo sobre disponibilidade local.",
+          "goals": [
+            "Conhecer os equipamentos",
+            "Conhecer a sequência de separação",
+            "Definir as especificações de um separador"
+          ],
+          "usedTools": [
+            "Análise de mercado",
+            "Microsoft Excel",
+            "Microsoft Word"
+          ]
+        }
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Programação em Linguagem Python",
+      "providedBy": "Universidade Federal da Bahia",
+      "concludedIn": "2022-08-20T00:00:00.000Z",
+      "workload": 15,
+      "area": "Desenvolvimento de Softwares",
+      "content": [
+        {
+          "topic": "Lógica de programação",
+          "subTopics": [
+            {"id":0, "item":"Variáveis"},
+            {"id":1, "item":"Tipos de variáveis"},
+            {"id":2, "item":"Estruturas de repetição"},
+            {"id":3, "item":"Funções"},
+            {"id":4, "item":"Objetos"}
+          ]
+        },
+        {
+          "topic": "Análise de Dados",
+          "subTopics": [
+            {"id":0, "item":"Numpy"},
+            {"id":1, "item":"Pandas"},
+            {"id":2, "item":"Keras"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lean Manufacturing Basic",
+      "providedBy": "CAE Treinamentos",
+      "concludedIn": "2021-04-01T00:00:00.000Z",
+      "workload": 10,
+      "area": "Engenharia",
+      "content": [
+        {
+          "topic": "Lean Thinking",
+          "subTopics": [
+            {"id":0, "item":"Fundamentos Lean"},
+            {"id":1, "item":"Os 7 desperdícios do Lean"},
+            {"id":2, "item":"O oitavo desperdício"},
+            {"id":3, "item":"Fluxo de valor"}
+          ]
+        },
+        {
+          "topic": "Ferramentas",
+          "subTopics": [
+            {"id":0, "item":"Mapeamento do Fluxo de Valor (MFV)"},
+            {"id":1, "item":"Just-In-Time (JIT)"},
+            {"id":2, "item":"Kanban"},
+            {"id":3, "item":"Poka-Yoke"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gestão de Ativos 4.0: Semana do Gestor de Manutenção",
+      "providedBy": "Manutenção em Ação",
+      "concludedIn": "2021-12-17T00:00:00.000Z",
+      "workload": 8,
+      "area": "Engenharia",
+      "content": [
+        {
+          "topic": "Planejamento",
+          "subTopics": [
+            {"id":0, "item":"Planos de inpeção"},
+            {"id":1, "item":"Planos de lubrificação"}
+          ]
+        },
+        {
+          "topic": "Gerenciamento",
+          "subTopics": [
+            {"id":0, "item":"Organização"},
+            {"id":1, "item":"Rastreabilidade"},
+            {"id":2, "item":"Padronização de procedimentos"}
+          ]
+        },
+        {
+          "topic": "Engenharia",
+          "subTopics": [
+            {"id":0, "item":"Análise de falhas"},
+            {"id":1, "item":"Análise dos Modos e Efeitos de Falha (FMEA)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Acelerador de Carreira com Power BI",
+      "providedBy": "Empowerdata",
+      "concludedIn": "2021-11-28T00:00:00.000Z",
+      "workload": 8,
+      "area": "Análise de Dados",
+      "content": [
+        {
+          "topic": "Estrutura de dados",
+          "subTopics": [
+            {"id":0, "item":"Estrutura do banco de dados"},
+            {"id":1, "item":"Gráficos"}
+          ]
+        },
+        {
+          "topic": "Apresentação dinâmica de resultados",
+          "subTopics": [
+            {"id":0, "item":"Dashboards"},
+            {"id":1, "item":"Funções DAX"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lean Six Sigma: White Belt",
+      "providedBy": "CAE Treinamentos",
+      "concludedIn": "2022-05-05T00:00:00.000Z",
+      "workload": 10,
+      "area": "Engenharia",
+      "content": [
+        {
+          "topic": "DMAIC - Define",
+          "subTopics": [
+            {"id":0, "item":"Voz do Cliente (VOC)"},
+            {"id":1, "item":"Suppliers Inputs Process Outputs Costumers (SIPOC)"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Measure",
+          "subTopics": [
+            {"id":0, "item":"Tipos de mapas de processos"},
+            {"id":1, "item":"Análise de valor agregado"},
+            {"id":2, "item":"Análises gráficas"},
+            {"id":3, "item":"Diagrama de Pareto"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Analyse",
+          "subTopics": [
+            {"id":0, "item":"Análise de causa raiz"},
+            {"id":1, "item":"Matriz de Ishikawa"},
+            {"id":2, "item":"5 Porquês"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Improve",
+          "subTopics": [
+            {"id":0, "item":"Estruturação do plano de melhorias"},
+            {"id":1, "item":"Ferramentas de priorização"},
+            {"id":2, "item":"Plano de ação 5W2H"},
+            {"id":2, "item":"Mapa de esforço e impacto"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Control",
+          "subTopics": [
+            {"id":0, "item":"Controle e sustentabilidade de processos"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lean Six Sigma: Yellow Belt",
+      "providedBy": "Yokoten",
+      "concludedIn": "2022-11-08T00:00:00.000Z",
+      "workload": 12,
+      "area": "Engenharia",
+      "content": [
+        {
+          "topic": "Lean Thinking",
+          "subTopics": [
+            {"id":0, "item":"Ciclo PDCA"},
+            {"id":1, "item":"Mapa de Fluxo de Valor (MFV)"},
+            {"id":2, "item":"Os 7 desperdícios do Lean"},
+            {"id":3, "item":"Diagrama de Espaguete"},
+            {"id":4, "item":"5 S"},
+            {"id":4, "item":"Kaizen"},
+            {"id":4, "item":"Melhoria Contínua"}
+          ]
+        },
+        {
+          "topic": "Estatística",
+          "subTopics": [
+            {"id":0, "item":"Curva de Gauss"},
+            {"id":1, "item":"Conceito de distribuição"},
+            {"id":2, "item":"Estatística Descritiva"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Define",
+          "subTopics": [
+            {"id":0, "item":"Voz do Cliente (VOC)"},
+            {"id":1, "item":"Suppliers Inputs Process Outputs Costumers (SIPOC)"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Measure",
+          "subTopics": [
+            {"id":0, "item":"Tipos de mapas de processos"},
+            {"id":1, "item":"Análise de valor agregado"},
+            {"id":2, "item":"Análises gráficas"},
+            {"id":3, "item":"Diagrama de Pareto"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Analyse",
+          "subTopics": [
+            {"id":0, "item":"Análise de causa raiz"},
+            {"id":1, "item":"Matriz de Ishikawa"},
+            {"id":2, "item":"5 Porquês"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Improve",
+          "subTopics": [
+            {"id":0, "item":"Estruturação do plano de melhorias"},
+            {"id":1, "item":"Ferramentas de priorização"},
+            {"id":2, "item":"Plano de ação 5W2H"},
+            {"id":2, "item":"Mapa de esforço e impacto"}
+          ]
+        },
+        {
+          "topic": "DMAIC - Control",
+          "subTopics": [
+            {"id":0, "item":"Controle e sustentabilidade de processos"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gestão de Ativos 4.0: Maratona 4.0",
+      "providedBy": "Manutenção em Ação",
+      "concludedIn": "2023-12-15T00:00:00.000Z",
+      "workload": 10,
+      "area": "Engenharia",
+      "content": [
+        {
+          "topic": "Planejamento",
+          "subTopics": [
+            {"id":0, "item":"Planos de inpeção"},
+            {"id":1, "item":"Planos de lubrificação"}
+          ]
+        },
+        {
+          "topic": "Gerenciamento",
+          "subTopics": [
+            {"id":0, "item":"Organização"},
+            {"id":1, "item":"Rastreabilidade"},
+            {"id":2, "item":"Padronização de procedimentos"}
+          ]
+        },
+        {
+          "topic": "Engenharia",
+          "subTopics": [
+            {"id":0, "item":"Análise de falhas"},
+            {"id":1, "item":"Análise dos Modos e Efeitos de Falha (FMEA)"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Acelerador de Carreira com Power BI: Módulo Avançado",
+      "providedBy": "Empowerdata",
+      "concludedIn": "2023-11-30T00:00:00.000Z",
+      "workload": 12,
+      "area": "Análise de Dados",
+      "content": [
+        {
+          "topic": "Estrutura de dados",
+          "subTopics": [
+            {"id":0, "item":"Estrutura do banco de dados"},
+            {"id":1, "item":"Gráficos"}
+          ]
+        },
+        {
+          "topic": "Apresentação dinâmica de resultados",
+          "subTopics": [
+            {"id":0, "item":"Dashboards"},
+            {"id":1, "item":"Funções DAX"}
+          ]
+        },
+        {
+          "topic": "Machine Learning",
+          "subTopics": [
+            {"id":0, "item":"Regressão"},
+            {"id":1, "item":"Classificação"},
+            {"id":2, "item":"Agrupamento"},
+            {"id":2, "item":"Previsão"}
+          ]
+        }
+      ]
+    }
+  ],
+  "applications": [
+    {
+      "index": 0,
+      "id": "pokeCardGame",
+      "name": "PokéCard Game",
+      "slug":"pokecard",
+      "spotlight": true,
+      "description": "O projeto consiste em um de cartas, onde os dados são da PokeAPI (https://pokeapi.co/docs/v2#pokemon), onde você pode duelar, ganhar moedas, comprar pacotes de cartas, escolher o melhor conjunto de cartas para ser o jogador mais bem classificado.",
+      "githubUrl": "https://github.com/DGabrielF/pokemon-card-game/",
+      "url": "https://dgabrielf.github.io/pokemon-card-game/",
+      "technologies": ["HTML", "CSS", "JavaScript", "Firebase", "API"]
+    },
+    {
+      "index": 1,
+      "id": "pianoSimulator",
+      "name": "Simulador de Piano",
+      "slug":"piano",
+      "spotlight": false,
+      "description": "O projeto consiste em um simulador de teclado, aceitando toques e teclas.",
+      "githubUrl": "https://github.com/DGabrielF/piano-simulator/",
+      "url": "https://dgabrielf.github.io/piano-simulator/",
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "index": 2,
+      "id": "wreckItRalph",
+      "name": "Detona Ralph",
+      "slug":"ralph",
+      "spotlight":true,
+      "description": "O projeto consiste em um jogo baseado no clássico Detona Ralph e possui sistemas de classificação, aumento da dificuldade e intervalos de descanso.",
+      "githubUrl": "https://github.com/DGabrielF/wreck-it-ralph/",
+      "url": "https://dgabrielf.github.io/wreck-it-ralph/",
+      "technologies": ["HTML", "CSS", "JavaScript", "Firebase"]
+    },
+    {
+      "index": 3,
+      "id": "memoryGame",
+      "name": "Jogo da Memória",
+      "slug":"memory",
+      "spotlight":false,
+      "description": "O projeto consiste em um jogo da memória que conta a quantidade de movimentos utilizados para completar o desafio.",
+      "githubUrl": "https://github.com/DGabrielF/memory-game/",
+      "url": "https://dgabrielf.github.io/memory-game/",
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "index": 4,
+      "id": "mathHelper",
+      "name": "Math Helper",
+      "slug": "abaco",
+      "spotlight":false,
+      "description": "O projeto consiste em utilizar lógica de programação para resolver cálculos.",
+      "githubUrl": "https://github.com/DGabrielF/math-helper/",
+      "url": "https://dgabrielf.github.io/math-helper/",
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "index": 5,
+      "id": "pokedex",
+      "name": "Pokedex",
+      "slug": "pokedex",
+      "spotlight":false,
+      "description": "O projeto consiste em consumir dados da PokeAPI (https://pokeapi.co/docs/v2#pokemon) para criar uma aplicação de busca de informações sobre os pokemons.",
+      "githubUrl": "https://github.com/DGabrielF/pokedex/",
+      "url": "https://dgabrielf.github.io/pokedex/",
+      "technologies": ["HTML", "CSS", "JavaScript", "API"]
+    }
+  ],
+  "challenges": [
+    {
+      "index": 0,
+      "id": "JsCep",
+      "name": "Formulário de endereço com CEP em JavaScript",
+      "slug": "cep",
+      "spotlight":true,
+      "description": "O projeto consiste em criar uma interface com auto preenchimento de campos do endereço com base no CEP digitado.",
+      "githubUrl": "https://github.com/DGabrielF/js-cep-challenge/",
+      "siteUrl": "https://dgabrielf.github.io/js-cep-challenge/",
+      "technologies": ["HTML", "CSS", "JavaScript", "API"]
+    },
+    {
+      "index": 1,
+      "id": "JsPhotoGrid",
+      "name": "Disposição responsiva de itens em Grid",
+      "slug": "grid",
+      "spotlight":false,
+      "description": "Este é um projeto simples desenvolvido para demonstrar o uso do Display Grid, técnicas de responsividade e boas práticas de organização de projetos utilizando JavaScript, HTML e CSS.",
+      "githubUrl": "https://github.com/DGabrielF/js-photo-grid-challenge/",
+      "siteUrl": "https://dgabrielf.github.io/js-photo-grid-challenge/",
+      "technologies": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "index": 2,
+      "id": "JsCurrencyExchange",
+      "name": "Consulta de compra e venda de moedas",
+      "slug": "currency",
+      "spotlight":false,
+      "description": "O projeto consiste em consumir dados da AwesomeAPI (awesomeapi.com.br) para criar uma aplicação de conversão de moedas.",
+      "githubUrl": "https://github.com/DGabrielF/js-currency-challenge/",
+      "siteUrl": "https://dgabrielf.github.io/js-currency-challenge/",
+      "technologies": ["HTML", "CSS", "JavaScript", "API"]
+    }
+  ]
+}
