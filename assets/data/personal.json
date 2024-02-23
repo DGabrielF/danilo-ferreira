@@ -139,6 +139,10 @@
             "Smtplib",
             "Firebase",
             "Documentação da aplicação"
+          ],
+          "team": [
+            {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"},
+            {"name": "Jonatas Oliveira Cavalcante"}
           ]
         },
         {
@@ -162,6 +166,11 @@
             "Numpy",
             "Pandas",
             "Matplotlib"
+          ],
+          "team": [
+            {"name": "Fábio César"},
+            {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"},
+            {"name": "Gabriel Vita"}
           ]
         },
         {
@@ -178,6 +187,11 @@
             "Componentes eletrônicos",
             "Conexões eletrônicas",
             "Desenho técnico"
+          ],
+          "team": [
+            {"name": "Fábio César"},
+            {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"},
+            {"name": "Gabriel Vita"}
           ]
         },
         {
@@ -193,6 +207,10 @@
           "usedTools": [
             "Desenho técnico",
             "Modelagem 3D"
+          ],
+          "team": [
+            {"name": "Daniel Campos da Paixão"},
+            {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
           ]
         }
       ]
@@ -221,6 +239,10 @@
           "usedTools": [
             "Gerenciamento de banco de dados",
             "Microsoft Excel"
+          ],
+          "team": [
+            {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"},
+            {"name": "Anelise Laranjeiras"}
           ]
         },
         {
@@ -238,6 +260,9 @@
             "Análise de mercado",
             "Microsoft Excel",
             "Microsoft Word"
+          ],
+          "team": [
+            {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
           ]
         }
       ]
@@ -539,10 +564,13 @@
       "name": "PokéCard Game",
       "slug":"pokecard",
       "spotlight": true,
-      "description": "O projeto consiste em um de cartas, onde os dados são da PokeAPI (https://pokeapi.co/docs/v2#pokemon), onde você pode duelar, ganhar moedas, comprar pacotes de cartas, escolher o melhor conjunto de cartas para ser o jogador mais bem classificado.",
+      "description": "O projeto consiste em um de cartas, onde os dados são da PokeAPI (pokeapi.co), onde você pode duelar, ganhar moedas, comprar pacotes de cartas, escolher o melhor conjunto de cartas para ser o jogador mais bem classificado.",
       "githubUrl": "https://github.com/DGabrielF/pokemon-card-game/",
       "url": "https://dgabrielf.github.io/pokemon-card-game/",
-      "technologies": ["HTML", "CSS", "JavaScript", "Firebase", "API"]
+      "usedTools": ["HTML", "CSS", "JavaScript", "Firebase", "API"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     },
     {
       "index": 1,
@@ -553,7 +581,10 @@
       "description": "O projeto consiste em um simulador de teclado, aceitando toques e teclas.",
       "githubUrl": "https://github.com/DGabrielF/piano-simulator/",
       "url": "https://dgabrielf.github.io/piano-simulator/",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "usedTools": ["HTML", "CSS", "JavaScript"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     },
     {
       "index": 2,
@@ -564,7 +595,10 @@
       "description": "O projeto consiste em um jogo baseado no clássico Detona Ralph e possui sistemas de classificação, aumento da dificuldade e intervalos de descanso.",
       "githubUrl": "https://github.com/DGabrielF/wreck-it-ralph/",
       "url": "https://dgabrielf.github.io/wreck-it-ralph/",
-      "technologies": ["HTML", "CSS", "JavaScript", "Firebase"]
+      "usedTools": ["HTML", "CSS", "JavaScript", "Firebase"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     },
     {
       "index": 3,
@@ -575,7 +609,10 @@
       "description": "O projeto consiste em um jogo da memória que conta a quantidade de movimentos utilizados para completar o desafio.",
       "githubUrl": "https://github.com/DGabrielF/memory-game/",
       "url": "https://dgabrielf.github.io/memory-game/",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "usedTools": ["HTML", "CSS", "JavaScript"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     },
     {
       "index": 4,
@@ -586,7 +623,10 @@
       "description": "O projeto consiste em utilizar lógica de programação para resolver cálculos.",
       "githubUrl": "https://github.com/DGabrielF/math-helper/",
       "url": "https://dgabrielf.github.io/math-helper/",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "usedTools": ["HTML", "CSS", "JavaScript"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     },
     {
       "index": 5,
@@ -594,10 +634,13 @@
       "name": "Pokedex",
       "slug": "pokedex",
       "spotlight":false,
-      "description": "O projeto consiste em consumir dados da PokeAPI (https://pokeapi.co/docs/v2#pokemon) para criar uma aplicação de busca de informações sobre os pokemons.",
+      "description": "O projeto consiste em consumir dados da PokeAPI (pokeapi.co) para criar uma aplicação de busca de informações sobre os pokemons.",
       "githubUrl": "https://github.com/DGabrielF/pokedex/",
       "url": "https://dgabrielf.github.io/pokedex/",
-      "technologies": ["HTML", "CSS", "JavaScript", "API"]
+      "usedTools": ["HTML", "CSS", "JavaScript", "API"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     }
   ],
   "challenges": [
@@ -610,7 +653,10 @@
       "description": "O projeto consiste em criar uma interface com auto preenchimento de campos do endereço com base no CEP digitado.",
       "githubUrl": "https://github.com/DGabrielF/js-cep-challenge/",
       "siteUrl": "https://dgabrielf.github.io/js-cep-challenge/",
-      "technologies": ["HTML", "CSS", "JavaScript", "API"]
+      "usedTools": ["HTML", "CSS", "JavaScript", "API"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     },
     {
       "index": 1,
@@ -621,7 +667,10 @@
       "description": "Este é um projeto simples desenvolvido para demonstrar o uso do Display Grid, técnicas de responsividade e boas práticas de organização de projetos utilizando JavaScript, HTML e CSS.",
       "githubUrl": "https://github.com/DGabrielF/js-photo-grid-challenge/",
       "siteUrl": "https://dgabrielf.github.io/js-photo-grid-challenge/",
-      "technologies": ["HTML", "CSS", "JavaScript"]
+      "usedTools": ["HTML", "CSS", "JavaScript"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     },
     {
       "index": 2,
@@ -632,7 +681,10 @@
       "description": "O projeto consiste em consumir dados da AwesomeAPI (awesomeapi.com.br) para criar uma aplicação de conversão de moedas.",
       "githubUrl": "https://github.com/DGabrielF/js-currency-challenge/",
       "siteUrl": "https://dgabrielf.github.io/js-currency-challenge/",
-      "technologies": ["HTML", "CSS", "JavaScript", "API"]
+      "usedTools": ["HTML", "CSS", "JavaScript", "API"],
+      "team": [
+        {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
+      ]
     }
   ]
 }
