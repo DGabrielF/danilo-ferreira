@@ -47,12 +47,14 @@ header {
   cursor: pointer;
 }
 
+.top_menu.hide,
 .top_menu {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 2px
 }
+
 .top_menu>a {
   padding: 6px;
   width: auto;
@@ -80,7 +82,6 @@ header {
 }
 
 .curriculum {
-  margin-top: 10px;
   animation: shakeEnergyDischarge 10s infinite;
 }
 
@@ -101,6 +102,9 @@ header {
     top: 100%;
     right: 10px;
   }
+  .top_menu.hide{
+    display: none;
+  }
   .top_menu>a {
     width: 100%;
   
@@ -109,6 +113,9 @@ header {
     gap: 8px;
 
     position: relative
+  }
+  .curriculum {
+    margin-top: 10px;
   }
   .menu_icon {
     display: flex;

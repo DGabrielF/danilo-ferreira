@@ -53,3 +53,41 @@
     opacity: 0;
   }
 }
+
+@keyframes moveDownAndHide {
+  0% {
+    top: 0%;
+  }
+  5% {
+    top: 50%;
+  }
+  90% {
+    top: 50%;
+  }
+  95% {
+    top: 150%;
+  }
+  100% {
+    top: 150%;
+  }
+}
+
+@keyframes growLetters {
+  0% {
+    opacity: 0;
+    font-size: 1%;
+  }
+  5% {
+    opacity: 1;
+    font-size: 100%;
+  }
+
+  95% {
+    opacity: 1;
+    font-size: 100%;
+  }
+  100% {
+    opacity: 0;
+    font-size: 1%;
+  }
+}
