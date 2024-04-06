@@ -44,13 +44,44 @@ header {
 
 .menu_icon {
   display: none;
+  cursor: pointer;
 }
 
 .top_menu {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 10px
+  gap: 2px
+}
+.top_menu>a {
+  padding: 6px;
+  width: auto;
+
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+
+  position: relative;
+  overflow: hidden;
+}
+.top_menu>a:hover::after {
+  content: "";
+
+  height: 100%;
+  width: 3px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: -4px 0 4px #0f0;
+  animation: hoverFastCharge 0.2s forwards;
+}
+
+.curriculum {
+  margin-top: 10px;
+  animation: shakeEnergyDischarge 10s infinite;
 }
 
 @media screen and (max-width: 549px) {
@@ -69,7 +100,15 @@ header {
     position: absolute;
     top: 100%;
     right: 10px;
+  }
+  .top_menu>a {
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
 
+    position: relative
   }
   .menu_icon {
     display: flex;
@@ -79,20 +118,10 @@ header {
 @media only screen and (max-width: 299px) {
   .top_menu {
     width: calc(100% - 20px);
-    flex-direction: column;
-
-    background-color: #18181B;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
-    border-left: 1px solid #000;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    box-shadow: 0 3px 3px #000;
-
-    position: absolute;
-    top: 100%;
-    right: 10px;
-
+  }
+  .top_menu>a {
+    width: 60%;
+    min-width: 100px;
   }
   .menu_icon {
     display: flex;

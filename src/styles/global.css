@@ -1,4 +1,5 @@
 @import url("top-menu.css");
+@import url("animations.css");
 
 * {
   margin: 0;
@@ -8,21 +9,67 @@
   font-family: monospace;
   color: #0f0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #18181b;
 }
+
+/* Anchors */
 a {
+  padding: 2px 4px;
   text-decoration: none;
 }
+a:hover {
+  background-color: #0f03;
+  transition: 0.3s ease;
+}
+
+/* Button */
 button {
   padding: 4px 6px;
   text-transform: uppercase;
 
   border: 1px solid #0f0a;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: #18181b;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
+}
+button:hover {
+  text-shadow: 0 0 2px #0f0;
+  border: 1px solid #0f0;
+  background-color: #0f03;
+  transition: 0.3s ease;
+}
+button:active {
+  background-color: #0f07;
+  position: relative;
+  top: 1px;
+  transition: top 0.3s ease, background-color 0.3s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #18181b;
+  outline: 1px solid #0f03;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0f05;
+  border-radius: 8px;
+  border: 2px solid #181422;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0f07;
+  border: 2px solid #1f1147;
 }
