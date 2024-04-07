@@ -104,3 +104,25 @@
     font-size: 1%;
   }
 }
+
+@keyframes stretchingHorizontalSeparator {
+  0% {
+    width: 100%;
+    box-shadow: none;
+  }
+  49%{
+    width: 100%;
+    box-shadow: 0 0 5px #0f08;
+  }
+  50%{
+    width: 1%;
+    box-shadow: 0 0 5px #0f0;
+  }
+  51%{
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+    box-shadow: none;
+  }
+}

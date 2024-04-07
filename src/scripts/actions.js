@@ -12,14 +12,13 @@ export function setGreetings() {
 export function setLastName(fullName) {
   const fullNameArray = fullName.split(" ");
   while (true) {
-    const nameIndex = Math.floor(Math.random()*fullNameArray.length-1)+1
-    if (fullNameArray[nameIndex].length > 2 && nameIndex != 0){
-      return `${fullNameArray[nameIndex]}.`
+    if (setRandomArrayElement(fullNameArray).length > 2 && setRandomArrayElement(fullNameArray) != fullNameArray[0]){
+      return `${setRandomArrayElement(fullNameArray)}.`
     }
   }
 }
 
-export function setJoke(jokes) {
-  const jokeIndex = Math.floor(Math.random()*jokes.length)
-  return jokes[jokeIndex]
+export function setRandomArrayElement(array) {
+  const index = Math.floor(Math.random()*array.length)
+  return array[index]
 }
