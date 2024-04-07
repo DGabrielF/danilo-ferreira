@@ -1,5 +1,5 @@
-.intro {
-  min-height: calc(100vh - 50px);
+#intro {
+  min-height: 100vh;
 
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
 }
 .subtitle {
   width: 100%;
-  height: 30px;
+  height: 38px;
   overflow: hidden;
   position: relative;
 }

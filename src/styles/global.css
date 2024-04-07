@@ -1,6 +1,7 @@
 @import url("animations.css");
 @import url("top-menu.css");
 @import url("intro.css");
+@import url("about-me.css");
 
 * {
   margin: 0;

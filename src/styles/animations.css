@@ -40,7 +40,7 @@
   }
 }
 
-@keyframes hoverFastCharge {
+@keyframes horizontalHoverFastCharge {
   0% {
     left: 0%;
   }
@@ -50,6 +50,19 @@
   }
   100% {
     left: 100%;
+    opacity: 0;
+  }
+}
+@keyframes verticalHoverFastCharge {
+  0% {
+    top: 0%;
+  }
+  99% {
+    top: 99%;
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
     opacity: 0;
   }
 }

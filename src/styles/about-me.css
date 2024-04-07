@@ -1,0 +1,97 @@
+#about_me {
+  padding: 0 20px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.about_me_content{
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.personal_introduction{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.profile_image{
+  min-height: 150px;
+  min-width: 100px;
+  border-radius: 50%;
+  border: 1px solid #0f07;
+  background-image: url("../assets/images/photo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+}
+.profile_image:hover{
+  background-image: url("../assets/images/profile.jpg");
+  transition: 1s ease;
+}
+.profile_image:hover{
+  box-shadow: 0 0 5px #0f07;
+}
+
+.falling_words{
+  height: 30vw;
+  border-radius: 5px;
+  background-image: url("../assets/images/matrix-bg-400-x-267.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.falling_words::before {
+  content: '';
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00000080;
+  cursor: pointer;
+}
+.falling_words:hover::before {
+  background-color: #00000085;
+}
+.matrix-char {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  color: #0f0;
+  position: absolute;
+  animation: moveDown 10s linear infinite;
+  transform: translateX(-50%);
+}
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    text-shadow: 0 -1px 3px #0f0a;
+    top: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0 -3px 2px #0f0d;
+    top:100%
+  }
+}

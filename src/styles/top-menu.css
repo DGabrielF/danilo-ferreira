@@ -4,12 +4,16 @@ header {
   height: 50px;
 
   box-shadow: 0 2px 2px #000;
+  background-color: #18181b;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .octagon_border {
@@ -71,17 +75,18 @@ header {
 .top_menu>a:hover::after {
   content: "";
 
-  height: 100%;
-  width: 3px;
+  height: 3px;
+  width: 100%;
 
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: -4px 0 4px #0f0;
-  animation: hoverFastCharge 0.2s forwards;
+  box-shadow: 0 -4px 4px #0f0;
+  animation: verticalHoverFastCharge 0.3s forwards;
 }
 
 .curriculum {
+  margin-left: 3px;
   animation: shakeEnergyDischarge 10s infinite;
 }
 
@@ -113,6 +118,13 @@ header {
     gap: 8px;
 
     position: relative
+  }
+  .top_menu>a:hover::after {
+    height: 100%;
+    width: 3px;
+
+    box-shadow: -4px 0 4px #0f0;
+    animation: horizontalHoverFastCharge 0.2s forwards;
   }
   .curriculum {
     margin-top: 10px;
