@@ -1,4 +1,4 @@
-.content {
+#contact .content {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -19,7 +19,7 @@
 }
 
 @media only screen and (max-width: 549px) {
-  .content {
+  #contact .content {
     flex-direction: column;
   }
 }

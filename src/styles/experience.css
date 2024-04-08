@@ -62,7 +62,7 @@
   font-size: smaller;
 }
 
-.content {
+#experience .content {
   display: flex;
   flex-direction: column;
   gap: 8px;
