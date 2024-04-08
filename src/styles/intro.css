@@ -1,11 +1,5 @@
 #intro {
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
 }
 .greeting_paragraph,
 .greeting_paragraph>span{
@@ -45,4 +39,46 @@
 }
 .btn_chat_whatsapp {
   animation: shakeEnergyDischarge 10s infinite;
+}
+
+.to_top {
+  width: 23px;
+  height: 23px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  box-shadow: 0 0 3px #67f99f;
+
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 1;
+  cursor: pointer;
+}
+.to_top:hover {
+  border: 1px solid #0f0a;
+  background-color: #000d;
+}
+.to_top:active {
+  background-color: #fff3;
+}
+.to_top::after {
+  content: "Para o topo";
+  padding: 0 10px;
+
+  text-wrap: nowrap;
+  text-shadow: 0 0 2px #0f0a;
+
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+.to_top:hover::after {
+  display: block;
 }

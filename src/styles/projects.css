@@ -102,7 +102,7 @@
   text-shadow: 0 0 5px #000;
   text-align: end;
 }
-.excerpt {
+#projects .excerpt {
   padding: 5px;
   height: 80%;
   font-size: smaller;

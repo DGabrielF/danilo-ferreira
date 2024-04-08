@@ -1,4 +1,5 @@
-import { handleGreeting, handleJoke, handleLastName, toggleTopMenu, fallingWordsAnimation, updateExperienceData, createExperienceMenu } from "./views.js"
+import { chatOnWhatsapp, openCurriculum, setElementsPosition, switchContactWay } from "./actions.js";
+import { handleGreeting, handleJoke, handleLastName, toggleTopMenu, fallingWordsAnimation, updateExperienceData, createExperienceMenu, createCard, createSeatedItem } from "./views.js"
 const state = {
   isTopMenuOpen: false,
   fullName: "Danilo Gabriel Fagundes de Oliveira Ferreira",
@@ -329,7 +330,10 @@ const state = {
 
 function init() {
   const topMenuIcon = document.querySelector(".menu_icon");
-  topMenuIcon.addEventListener("click", e => toggleTopMenu(state));
+  topMenuIcon.addEventListener("click", () => toggleTopMenu(state));
+
+  const btnCurriculum = document.querySelector(".curriculum");
+  btnCurriculum.addEventListener("click",() => openCurriculum());
 
   handleGreeting();
 
@@ -338,6 +342,10 @@ function init() {
 
   handleJoke(state.jokes)
   setInterval(() => handleJoke(state.jokes), 9900);
+
+  const btnWhatsapp = document.querySelector(".btn_chat_whatsapp");
+  btnWhatsapp.addEventListener("click", () => chatOnWhatsapp(state.contacts))
+
   
   fallingWordsAnimation(state.usedTools, state.fallingAnimation.duration)
   setInterval(() => {
@@ -365,60 +373,13 @@ function init() {
   const arrayWithPosition =  [...state.contacts];
   setElementsPosition(arrayWithPosition);
   arrayWithPosition.forEach( item => {
-    const seatedItems = document.createElement("div");
-    seatedItems.classList.add("seated_items")
-    seatedItems.style.left = String(item.left)+"%";
-    seatedItems.style.bottom = String(item.bottom)+"%";
-    seatedItems.style.backgroundImage = `url(src/assets/icons/${item.name.toLocaleLowerCase()}-logo-duotone.svg)`
+    const seatedItems = createSeatedItem(item);
     animationArea.appendChild(seatedItems)
   })
 }
 init();
 
-function setElementsPosition(arrayWithPosition) {
-  const TOTAL = 100;
-  arrayWithPosition.map((item, index) => {
-    const angle = index * 2*Math.PI/ arrayWithPosition.length
-    item.left = Math.floor(TOTAL/2*(1+Math.cos(angle)))
-    item.bottom = Math.floor(TOTAL/2*(1+Math.sin(angle)))
-  })
-}
 
-function createCard(project) {
-  const card = document.createElement("div");
-  card.classList.add("card");
 
-  const bg = document.createElement("div");
-  bg.classList.add("background");
-  card.appendChild(bg);
 
-  const img = document.createElement("img");
-  img.src = `src/assets/project_images/${project.slug}-bg.jpeg`;
-  img.alt = project.name.toLowerCase();
-  bg.appendChild(img);
-
-  const details = document.createElement("div");
-  details.classList.add("details");
-  card.appendChild(details);
-
-  const name = document.createElement("span");
-  name.classList.add("name");
-  name.textContent = project.name;
-  details.appendChild(name);
-
-  const excerpt = document.createElement("div");
-  excerpt.classList.add("excerpt");
-  details.appendChild(excerpt);
-
-  const excerptText = document.createElement("p");
-  excerptText.classList.add("text");
-  excerptText.textContent = project.excerpt;
-  excerpt.appendChild(excerptText);
-
-  const seeMore = document.createElement("button");
-  seeMore.id = project.slug;
-  seeMore.textContent = "VER MAIS";
-  details.appendChild(seeMore);
-  return card;
-}
 

@@ -36,10 +36,12 @@ body {
 section {
   padding: 0 15px;
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+
   position: relative;
 }
 

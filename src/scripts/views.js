@@ -110,3 +110,51 @@ export function updateExperienceData(company, selectedCompany, companies) {
   }
   return selectedCompany
 }
+
+export function createCard(project) {
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  const bg = document.createElement("div");
+  bg.classList.add("background");
+  card.appendChild(bg);
+
+  const img = document.createElement("img");
+  img.src = `src/assets/project_images/${project.slug}-bg.jpeg`;
+  img.alt = project.name.toLowerCase();
+  bg.appendChild(img);
+
+  const details = document.createElement("div");
+  details.classList.add("details");
+  card.appendChild(details);
+
+  const name = document.createElement("span");
+  name.classList.add("name");
+  name.textContent = project.name;
+  details.appendChild(name);
+
+  const excerpt = document.createElement("div");
+  excerpt.classList.add("excerpt");
+  details.appendChild(excerpt);
+
+  const excerptText = document.createElement("p");
+  excerptText.classList.add("text");
+  excerptText.textContent = project.excerpt;
+  excerpt.appendChild(excerptText);
+
+  const seeMore = document.createElement("button");
+  seeMore.id = project.slug;
+  seeMore.textContent = "VER MAIS";
+  details.appendChild(seeMore);
+  return card;
+}
+
+export function createSeatedItem(item) {
+  const seatedItems = document.createElement("div");
+  seatedItems.classList.add("seated_items");
+  seatedItems.style.left = String(item.left) + "%";
+  seatedItems.style.bottom = String(item.bottom) + "%";
+  seatedItems.style.backgroundImage = `url(src/assets/icons/${item.name.toLocaleLowerCase()}-logo-duotone.svg)`;
+  seatedItems.addEventListener("click", () => switchContactWay(state.contacts, item.name, item.url));
+  return seatedItems;
+}
