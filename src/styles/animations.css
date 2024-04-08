@@ -154,3 +154,73 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes wordsExplosion {
+  0% {
+    color: #0f0a;
+    transform: rotate(0deg);
+  }
+  40% {
+    color: #0f0c;
+    text-shadow: 0 0 2px #0f0;
+  }
+  43% {
+    color: #0f0e;
+    text-shadow: 0 0 3px #0f0;
+  }
+  45% {
+    color: #0f0;
+    text-shadow: 0 0 4px #0f0;
+    transform: rotate(0deg);
+  }
+  48% {
+    transform: rotate(3deg);
+  }
+  49% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+    letter-spacing: normal;
+  }
+  51% {
+    transform: rotate(-3deg);
+    letter-spacing: 20px;
+  }
+  52%{
+    letter-spacing: normal;
+  }
+  58% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }  
+}
+
+@keyframes signalNoise {
+  0% {
+    text-shadow: 0 0 0 #0f0;
+  }
+  48% {
+    text-shadow: 0 0 0 #0f0;
+  }
+  49% {
+    text-shadow: 0 0 5px #0f0;
+  }
+  50% {
+    text-shadow: 0 0 2px #0f0;
+    letter-spacing: normal;
+  }
+  51% {
+    text-shadow: 0 0 5px #0f0;
+    letter-spacing: 1px;
+  }
+  52% {
+    text-shadow: 0 0 2px #0f0;
+    letter-spacing: normal;
+  }
+  100% {
+    text-shadow: 0 0 0 #0f0;
+  }
+}

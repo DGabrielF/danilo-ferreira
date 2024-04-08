@@ -1,9 +1,9 @@
 import { setGreetings, setRandomArrayElement, setLastName } from "./actions.js"
 
 export function toggleTopMenu(state) {
-  state.isTopMenuOpen = !state.isTopMenuOpen;
+  state.isOpen.topMenu = !state.isOpen.topMenu;
   const topMenu = document.querySelector(".top_menu");
-  if (state.isTopMenuOpen) {
+  if (state.isOpen.topMenu) {
     topMenu.classList.remove("hide");
   } else {
     topMenu.classList.add("hide");

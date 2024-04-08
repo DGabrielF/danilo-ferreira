@@ -1,7 +1,14 @@
-import { chatOnWhatsapp, openCurriculum, setElementsPosition, switchContactWay } from "./actions.js";
+import { chatOnWhatsapp, openCurriculum, setElementsPosition } from "./actions.js";
 import { handleGreeting, handleJoke, handleLastName, toggleTopMenu, fallingWordsAnimation, updateExperienceData, createExperienceMenu, createCard, createSeatedItem } from "./views.js"
 const state = {
-  isTopMenuOpen: false,
+  isOpen: {
+    topMenu: false,
+    projectDetail: false
+  },
+  selected: {
+    company: {},
+    project: {}
+  },
   fullName: "Danilo Gabriel Fagundes de Oliveira Ferreira",
   jokes: [
     "Aprendiz de mago.",
@@ -77,7 +84,6 @@ const state = {
       ]
     },
   ],
-  selectedCompany: {},
   projects: [
     {
       "name": "NIX",
@@ -317,7 +323,7 @@ const state = {
         {"name": "Danilo Gabriel Fagundes de Oliveira Ferreira"}
       ]
     }
-  ],  
+  ],
   contacts: [
     {"name": "Whatsapp", "url": "5571993210108", "text": "(71) 99321-0108"},
     {"name": "Email", "url": "mailto:danilofof@gmail.com", "text": "danilofof@gmail.com"},
@@ -352,9 +358,9 @@ function init() {
   }, state.fallingAnimation.interval)
 
 
-  state.selectedCompany = state.companies[0]
-  updateExperienceData(state.selectedCompany, state.selectedCompany, state.companies)
-  createExperienceMenu(state.selectedCompany, state.companies);
+  state.selected.company = state.companies[0]
+  updateExperienceData(state.selected.company, state.selected.company, state.companies)
+  createExperienceMenu(state.selected.company, state.companies);
 
   const professional_container = document.querySelector(".project_container>.card_area")
   const personal_container = document.querySelector(".personal_projects>.card_area")
@@ -374,6 +380,52 @@ function init() {
   arrayWithPosition.forEach( item => {
     const seatedItems = createSeatedItem(item);
     animationArea.appendChild(seatedItems)
+  })
+
+  state.selected.project = state.projects[0]
+  const fade = document.querySelector(".fade");
+  console.log("fade", fade)
+  const projectDetails = document.querySelector("#project_details");
+  console.log("projectDetails", projectDetails)
+  
+  console.log("antes state.isOpen.projectDetail", state.isOpen.projectDetail)
+  state.isOpen.projectDetail = !state.isOpen.projectDetail
+  console.log("depois state.isOpen.projectDetail", state.isOpen.projectDetail)
+  if (state.isOpen.projectDetail) {
+    fade.classList.remove("hide");
+    projectDetails.classList.remove("hide");
+  } else {
+    fade.classList.add("hide");
+    projectDetails.classList.add("hide");
+  }
+  const projectName = document.querySelector("#project_details .title");
+  projectName.textContent = state.selected.project.name;
+  const projectDescription = document.querySelector("#project_details .description");
+  projectDescription.textContent = state.selected.project.excerpt;
+
+  const goals = document.querySelector("#project_details .goals");
+  goals.innerHTML = ""
+  state.selected.project.goals.forEach(goal => {
+    const li = document.createElement("li");
+    li.textContent = goal;
+    goals.appendChild(li)
+  })
+
+  const tools = document.querySelector("#project_details .tools");
+  tools.innerHTML = ""
+  state.selected.project.usedTools.forEach(tool => {
+    const li = document.createElement("li");
+    li.textContent = tool;
+    tools.appendChild(li)
+  })
+
+  const team = document.querySelector("#project_details .team");
+  team.innerHTML = ""
+  state.selected.project.team.forEach(member => {
+    const li = document.createElement("li");
+    const fullNameArray = member.name.split(" ")
+    li.textContent = `${fullNameArray[0]} ${fullNameArray[fullNameArray.length -1]}`;
+    team.appendChild(li)
   })
 }
 
