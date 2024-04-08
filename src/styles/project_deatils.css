@@ -59,3 +59,47 @@
   left: 0;
   z-index: 14;
 }
+
+.close_project_detail {
+  padding: 0;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 5px;
+  right: 5px;
+
+  cursor: pointer;
+}
+.close_project_detail:hover {
+  border-radius: 5px;
+  background-color: #0f04;
+  box-shadow: 0 0 3px #0f0a;
+}
+.close_project_detail::after {
+  content: "Fechar";
+  padding: 2px 10px;
+
+  text-wrap: nowrap;
+  color: #0f0;
+  font-weight: 900;
+  text-shadow: 0 0 10px #0f0;
+
+  border-radius: 15px;
+  background-color: #4442;
+  box-shadow: 0 0 2px #4442;
+
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-110%, -50%);
+}
+.close_project_detail:hover::after {
+  display: block;
+}

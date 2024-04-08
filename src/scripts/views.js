@@ -78,7 +78,7 @@ export function updateExperienceMenu(selectedCompany) {
   });
 }
 
-export function updateExperienceData(company, selectedCompany, companies) {
+export function updateExperienceData(company, selectedCompany, companies, projectsList, state) {
   selectedCompany = companies.find(item => item.alias === company.alias);
 
   const name = document.querySelector(".company");
@@ -106,12 +106,18 @@ export function updateExperienceData(company, selectedCompany, companies) {
     const div = document.createElement("div");
     div.classList.add("project");
     div.textContent = proj;
+    div.addEventListener("click", () => {
+      state.isOpen.projectDetail = true;
+      state.selected.project = projectsList.find(item => item.name.toLowerCase() === proj.toLowerCase());
+      toggleProjectDetails(state)
+      setProjectDetails(state)
+    })
     projects.appendChild(div);
   }
   return selectedCompany
 }
 
-export function createCard(project) {
+export function createCard(project, state) {
   const card = document.createElement("div");
   card.classList.add("card");
 
@@ -145,6 +151,12 @@ export function createCard(project) {
   const seeMore = document.createElement("button");
   seeMore.id = project.slug;
   seeMore.textContent = "VER MAIS";
+  seeMore.addEventListener("click", () => {
+    state.isOpen.projectDetail = true;
+    state.selected.project = project
+    toggleProjectDetails(state)
+    setProjectDetails(state)
+  })
   details.appendChild(seeMore);
   return card;
 }
@@ -157,4 +169,67 @@ export function createSeatedItem(item) {
   seatedItems.style.backgroundImage = `url(src/assets/icons/${item.name.toLocaleLowerCase()}-logo-duotone.svg)`;
   seatedItems.addEventListener("click", () => switchContactWay(state.contacts, item.name, item.url));
   return seatedItems;
+}
+
+export function setProjectDetails(state) {
+  const projectName = document.querySelector("#project_details .title");
+  projectName.textContent = state.selected.project.name;
+  const projectDescription = document.querySelector("#project_details .description");
+  projectDescription.textContent = state.selected.project.excerpt;
+
+  const goals = document.querySelector("#project_details .goals");
+  goals.innerHTML = "";
+  if (state.selected.project.goals) {
+    addProjectGoals(state.selected.project.goals, goals);
+  }
+
+  const tools = document.querySelector("#project_details .tools");
+  tools.innerHTML = "";
+  if (state.selected.project.usedTools) {
+    addUsedTools(state.selected.project.usedTools, tools);
+  }
+
+  const team = document.querySelector("#project_details .team");
+  team.innerHTML = "";
+  if (state.selected.project.team) {
+    addTeamMembers(state.selected.project.team, team);
+  }
+
+}
+
+function addProjectGoals(goalsArray, goals) {
+  goalsArray.forEach(goal => {
+    const li = document.createElement("li");
+    li.textContent = goal;
+    goals.appendChild(li);
+  });
+}
+
+function addUsedTools(usedToolsArray, tools) {
+  usedToolsArray.forEach(tool => {
+    const li = document.createElement("li");
+    li.textContent = tool;
+    tools.appendChild(li);
+  });
+}
+
+function addTeamMembers(membersArray, team) {
+  membersArray.forEach(member => {
+    const li = document.createElement("li");
+    const fullNameArray = member.name.split(" ");
+    li.textContent = `${fullNameArray[0]} ${fullNameArray[fullNameArray.length - 1]}`;
+    team.appendChild(li);
+  });
+}
+
+export function toggleProjectDetails(state) {
+  const fade = document.querySelector(".fade");
+  const projectDetails = document.querySelector("#project_details");
+  if (state.isOpen.projectDetail) {
+    fade.classList.remove("hide");
+    projectDetails.classList.remove("hide");
+  } else {
+    fade.classList.add("hide");
+    projectDetails.classList.add("hide");
+  }
 }
