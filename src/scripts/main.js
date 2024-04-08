@@ -345,7 +345,6 @@ function init() {
 
   const btnWhatsapp = document.querySelector(".btn_chat_whatsapp");
   btnWhatsapp.addEventListener("click", () => chatOnWhatsapp(state.contacts))
-
   
   fallingWordsAnimation(state.usedTools, state.fallingAnimation.duration)
   setInterval(() => {
@@ -377,9 +376,5 @@ function init() {
     animationArea.appendChild(seatedItems)
   })
 }
+
 init();
-
-
-
-
-
