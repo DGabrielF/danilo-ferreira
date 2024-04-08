@@ -49,7 +49,7 @@ export function createExperienceMenu(selectedCompany, companies) {
     button.classList.add(itemClass);
 
     button.addEventListener("click", () => {
-      updateExperienceData(company, selectedCompany, companies);
+      selectedCompany = updateExperienceData(company, selectedCompany, companies);
       updateExperienceMenu(selectedCompany)
     });
 
@@ -108,4 +108,5 @@ export function updateExperienceData(company, selectedCompany, companies) {
     div.textContent = proj;
     projects.appendChild(div);
   }
+  return selectedCompany
 }

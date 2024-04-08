@@ -1,0 +1,144 @@
+.card_area {
+  padding: 5px 20px;
+  width: 100%;
+  height: 25vh;
+  border-radius: 6px;
+  background-color: #0f02;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  overflow: auto;
+  position: relative;
+}
+.project_container{
+  position: relative;
+}
+.project_container::before {
+  content: "";
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(to right, #18181b, #18181baa, #18181b00);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.project_container::after {
+  content: "";
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(to left, #18181b, #18181baa, #18181b00);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+.card {
+  min-width: 280px;
+  height: 100%;
+  border: 1px solid #0f02;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #0f08;
+
+  position: relative;
+}
+.background {
+  width: 60%;
+  height: 100%;
+
+  border: 1px solid #0f02;
+  border-radius: 5px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+.background>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+}
+.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0003;
+}
+.details {
+  padding: 5px;
+  width: 60%;
+  height: 100%;
+
+  font-size: smaller;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 4px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+
+}
+.name {
+  padding-right: 2px;
+  color: rgb(2, 199, 2);
+  font-weight: bolder;
+  text-shadow: 0 0 5px #000;
+  text-align: end;
+}
+.excerpt {
+  padding: 5px;
+  height: 80%;
+  font-size: smaller;
+
+  border: 1px solid #0f02;
+  border-radius: 5px;
+  background-color: #18181b;
+  box-shadow: 0 0 5px #0f08;
+
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+}
+.text {
+  animation: moveUp 25s linear infinite;
+}
+button {
+  text-transform: none;
+  font-size: smaller;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    text-shadow: 0 1px 3px #0f0a;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0 3px 2px #0f0d;
+    transform: translateY(-100%);
+  }
+}

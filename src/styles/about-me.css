@@ -60,7 +60,8 @@
 }
 .matrix-char {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 500;
   color: #0f0;
   position: absolute;
   animation: moveDown 10s linear infinite;

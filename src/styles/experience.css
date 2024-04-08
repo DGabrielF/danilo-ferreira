@@ -121,11 +121,11 @@
     flex-direction: column-reverse;
   }
 
-  .select_mark {
+  .select_item>div {
     width: 100%;
     height: 2px;
   }
-  .selected_mark {
+  .selected_item>div {
     width: 100%;
     height: 3px;
 
