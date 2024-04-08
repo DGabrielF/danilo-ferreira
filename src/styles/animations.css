@@ -210,15 +210,13 @@
   }
   50% {
     text-shadow: 0 0 2px #0f0;
-    letter-spacing: normal;
   }
   51% {
-    text-shadow: 0 0 5px #0f0;
-    letter-spacing: 1px;
+    text-shadow: 0 0 10px #0f0;
   }
   52% {
-    text-shadow: 0 0 2px #0f0;
-    letter-spacing: normal;
+    text-shadow: 0 0 4px #0f0;
+
   }
   100% {
     text-shadow: 0 0 0 #0f0;

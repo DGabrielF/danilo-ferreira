@@ -1,6 +1,6 @@
 import { chatOnWhatsapp, openCurriculum, setElementsPosition } from "./actions.js";
 import { handleGreeting, handleJoke, handleLastName, toggleTopMenu, fallingWordsAnimation, updateExperienceData, createExperienceMenu, createCard, createSeatedItem, toggleProjectDetails, setProjectDetails, toggleScrollTopButton } from "./views.js"
-const state = {
+export const state = {
   isOpen: {
     topMenu: false,
     projectDetail: false
@@ -363,8 +363,8 @@ function init() {
 
 
   state.selected.company = state.companies[0]
-  updateExperienceData(state.selected.company, state.selected.company, state.companies, state.projects, state)
-  createExperienceMenu(state.selected.company, state.companies);
+  updateExperienceData(state, state.selected.company.alias)
+  createExperienceMenu(state);
 
   const professional_container = document.querySelector(".project_container>.card_area")
   const personal_container = document.querySelector(".personal_projects>.card_area")

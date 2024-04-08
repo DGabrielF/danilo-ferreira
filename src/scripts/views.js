@@ -1,6 +1,7 @@
-import { setGreetings, setRandomArrayElement, setLastName } from "./actions.js"
+import { setGreetings, setRandomArrayElement, setLastName, switchContactWay } from "./actions.js"
+import { state } from "./main.js"
 
-export function toggleTopMenu(state) {
+export function toggleTopMenu() {
   state.isOpen.topMenu = !state.isOpen.topMenu;
   const topMenu = document.querySelector(".top_menu");
   if (state.isOpen.topMenu) {
@@ -39,18 +40,18 @@ export function fallingWordsAnimation(wordsArray, fallingDuration) {
   }, fallingDuration);
 }
 
-export function createExperienceMenu(selectedCompany, companies) {
+export function createExperienceMenu() {
   const experienceNavBar = document.querySelector(".experience_nav_bar");
-  for (let company of companies) {
+  for (let company of state.companies) {
     const button = document.createElement("div");
     button.classList.add("experience_item");
     button.id = company.alias
-    const itemClass = selectedCompany.alias === company.alias ? "selected_item" : "select_item";
+    const itemClass = state.selected.company.alias === company.alias ? "selected_item" : "select_item";
     button.classList.add(itemClass);
 
     button.addEventListener("click", () => {
-      selectedCompany = updateExperienceData(company, selectedCompany, companies);
-      updateExperienceMenu(selectedCompany)
+      updateExperienceData(state, company.alias);
+      updateExperienceMenu(state.selected.company)
     });
 
     const mark = document.createElement("div");
@@ -78,18 +79,18 @@ export function updateExperienceMenu(selectedCompany) {
   });
 }
 
-export function updateExperienceData(company, selectedCompany, companies, projectsList, state) {
-  selectedCompany = companies.find(item => item.alias === company.alias);
+export function updateExperienceData(state, alias) {
+  state.selected.company = state.companies.find(item => item.alias === alias);
 
   const name = document.querySelector(".company");
-  name.textContent = selectedCompany.name;
+  name.textContent = state.selected.company.name;
 
   const position = document.querySelector(".position");
-  position.textContent = selectedCompany.position;
+  position.textContent = state.selected.company.position;
 
   const activities = document.querySelector(".activities");
   activities.innerHTML = "";
-  for (let act of selectedCompany.activities) {
+  for (let act of state.selected.company.activities) {
     const div = document.createElement("div");
     div.classList.add("activity");
     div.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#00ff00" viewBox="0 0 256 256"><path d="M176,128,96,208V48Z" opacity="0.2"></path><path d="M181.66,122.34l-80-80A8,8,0,0,0,88,48V208a8,8,0,0,0,13.66,5.66l80-80A8,8,0,0,0,181.66,122.34ZM104,188.69V67.31L164.69,128Z"></path></svg>`;
@@ -102,19 +103,18 @@ export function updateExperienceData(company, selectedCompany, companies, projec
 
   const projects = document.querySelector(".projects");
   projects.innerHTML = "";
-  for (let proj of selectedCompany.projects) {
+  for (let proj of state.selected.company.projects) {
     const div = document.createElement("div");
     div.classList.add("project");
     div.textContent = proj;
     div.addEventListener("click", () => {
       state.isOpen.projectDetail = true;
-      state.selected.project = projectsList.find(item => item.name.toLowerCase() === proj.toLowerCase());
+      state.selected.project = state.projects.find(item => item.name.toLowerCase() === proj.toLowerCase());
       toggleProjectDetails(state)
       setProjectDetails(state)
     })
     projects.appendChild(div);
   }
-  return selectedCompany
 }
 
 export function createCard(project, state) {
