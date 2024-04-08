@@ -1,5 +1,5 @@
 import { chatOnWhatsapp, openCurriculum, setElementsPosition } from "./actions.js";
-import { handleGreeting, handleJoke, handleLastName, toggleTopMenu, fallingWordsAnimation, updateExperienceData, createExperienceMenu, createCard, createSeatedItem, toggleProjectDetails, setProjectDetails } from "./views.js"
+import { handleGreeting, handleJoke, handleLastName, toggleTopMenu, fallingWordsAnimation, updateExperienceData, createExperienceMenu, createCard, createSeatedItem, toggleProjectDetails, setProjectDetails, toggleScrollTopButton } from "./views.js"
 const state = {
   isOpen: {
     topMenu: false,
@@ -351,6 +351,10 @@ function init() {
 
   const btnWhatsapp = document.querySelector(".btn_chat_whatsapp");
   btnWhatsapp.addEventListener("click", () => chatOnWhatsapp(state.contacts))
+
+  window.addEventListener("scroll", function() {
+    toggleScrollTopButton();
+  });
   
   fallingWordsAnimation(state.usedTools, state.fallingAnimation.duration)
   setInterval(() => {

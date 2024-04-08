@@ -233,3 +233,12 @@ export function toggleProjectDetails(state) {
     projectDetails.classList.add("hide");
   }
 }
+
+export function toggleScrollTopButton() {
+  var scrollTopButton = document.querySelector(".to_top");
+  if (window.scrollY > 200) {
+      scrollTopButton.style.display = "flex";
+  } else {
+      scrollTopButton.style.display = "none";
+  }
+}
