@@ -13,6 +13,11 @@
   justify-content: space-between;
   gap: 15px;
 }
+@media only screen and (max-width: 399px) {
+  .personal_introduction{
+    flex-direction: column-reverse;
+  }
+}
 
 .profile_image{
   min-height: 150px;

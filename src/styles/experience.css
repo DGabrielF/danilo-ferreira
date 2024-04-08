@@ -75,10 +75,13 @@
 }
 .activity {
   font-size: smaller;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .activity>svg {
   width: 13px;
-  height: 13px;
+  min-width: 13px;
 }
 
 .projects {
