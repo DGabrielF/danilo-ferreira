@@ -12,8 +12,9 @@ export function setGreetings() {
 export function setLastName(fullName) {
   const fullNameArray = fullName.split(" ");
   while (true) {
-    if (setRandomArrayElement(fullNameArray).length > 2 && setRandomArrayElement(fullNameArray) != fullNameArray[0]){
-      return `${setRandomArrayElement(fullNameArray)}.`
+    const nextName = setRandomArrayElement(fullNameArray)
+    if (nextName.length >= 3 && nextName != fullNameArray[0]){
+      return `${nextName}.`
     }
   }
 }
