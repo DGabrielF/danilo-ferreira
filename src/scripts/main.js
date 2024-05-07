@@ -328,7 +328,7 @@ export const state = {
     {"name": "Whatsapp", "url": "5571993210108", "text": "(71) 99321-0108"},
     {"name": "Email", "url": "mailto:danilofof@gmail.com", "text": "danilofof@gmail.com"},
     {"name": "GitHub", "url": "http://github.com/DGabrielF", "text": "/DGabrielF"},
-    {"name": "Linkedin", "url": "https://www.linkedin.com/in/danilo-gabriel-ferreira-092457127/", "text": "/danilo-gabriel-ferreira-092457127"},
+    {"name": "Linkedin", "url": "https://www.linkedin.com/in/danilogabriel-ferreira/", "text": "/danilo-gabriel-ferreira-092457127"},
     {"name": "Facebook", "url": "https://www.facebook.com/danilo.ferreira.186590", "text": "/danilo.ferreira.186590"}
   ],
 
