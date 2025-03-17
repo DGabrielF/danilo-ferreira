@@ -8,7 +8,7 @@ Contacts.create = ({data}) => {
   Contacts.data = data;
   
   Contacts.self = document.createElement("section");
-  Contacts.self.id = "contacts";
+  Contacts.self.id = "contact";
 
   Contacts.occupedArea = document.createElement("div");
   Contacts.occupedArea.classList.add("occuped_area");

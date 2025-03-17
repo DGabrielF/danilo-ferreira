@@ -1,8 +1,8 @@
-#contacts{
+#contact {
   margin-bottom: var(--padding);
 }
 
-#contacts .occuped_area {
+#contact .occuped_area {
   margin: 0 auto;
   padding: var(--padding);
   height: 100%;
@@ -28,7 +28,7 @@
 
 }
 
-#contacts .content {
+#contact .content {
   padding: var(--padding);
   width: 100%;
 
@@ -86,7 +86,7 @@
 }
 
 @media only screen and (max-width: 549px) {
-  #contacts .content {
+  #contact .content {
     flex-direction: column;
   }
 }

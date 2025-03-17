@@ -1,6 +1,6 @@
 #intro {
+  margin-top: var(--top-menu-height);
   align-items: flex-start;
-
 }
 
 #intro .occuped_area {
