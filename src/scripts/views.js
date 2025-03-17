@@ -1,4 +1,4 @@
-import { setGreetings, setRandomArrayElement, setLastName, switchContactWay } from "./actions.js"
+import { setRandomArrayElement, setLastName, switchContactWay } from "./actions.js"
 import { state } from "./main.js"
 
 export function toggleTopMenu() {
@@ -9,17 +9,6 @@ export function toggleTopMenu() {
   } else {
     topMenu.classList.add("hide");
   }
-}
-
-export function handleGreeting() {
-  const greeting = document.querySelector(".greeting");
-  greeting.textContent = setGreetings();
-}
-
-export function handleLastName(fullName) {
-  const lastName = document.querySelector(".last_name");
-  lastName.textContent = setLastName(fullName);
-
 }
 
 export function handleJoke(jokes) {
@@ -38,45 +27,6 @@ export function fallingWordsAnimation(wordsArray, fallingDuration) {
   setTimeout(() => {
     span.remove();
   }, fallingDuration);
-}
-
-export function createExperienceMenu() {
-  const experienceNavBar = document.querySelector(".experience_nav_bar");
-  for (let company of state.companies) {
-    const button = document.createElement("div");
-    button.classList.add("experience_item");
-    button.id = company.alias
-    const itemClass = state.selected.company.alias === company.alias ? "selected_item" : "select_item";
-    button.classList.add(itemClass);
-
-    button.addEventListener("click", () => {
-      updateExperienceData(state, company.alias);
-      updateExperienceMenu(state.selected.company)
-    });
-
-    const mark = document.createElement("div");
-
-    button.appendChild(mark);
-
-    const text = document.createElement("p");
-    text.textContent = company.alias;
-    button.appendChild(text);
-
-    experienceNavBar.appendChild(button);
-  }
-}
-
-export function updateExperienceMenu(selectedCompany) {
-  const experienceNavBar = document.querySelectorAll('.experience_nav_bar>div');
-  experienceNavBar.forEach(item => {
-    if (item.id === selectedCompany.alias) {
-      item.classList.remove("select_item");
-      item.classList.add("selected_item");
-    } else {
-      item.classList.remove("selected_item");
-      item.classList.add("select_item");    
-    }
-  });
 }
 
 export function updateExperienceData(state, alias) {

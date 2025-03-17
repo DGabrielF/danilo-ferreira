@@ -1,0 +1,252 @@
+#projects .occuped_area {
+  margin: 0 auto;
+  padding: var(--padding);
+  height: 100%;
+  width: 100%;
+  max-width: 930px;
+  
+  background-color: var(--background);
+  box-shadow: 0 0 15px var(--background);
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--padding);
+}
+
+#projects .container {
+  width: 100%;
+  height: 60vh;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--padding);
+
+  overflow: hidden;
+}
+
+#projects nav.nav_bar {
+  width: 115px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+#projects .project_item {
+  font-size: smaller;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  text-align: start;
+}
+#projects .project_item:hover {
+  background-color: #0f01;
+}
+#projects .select_item>div {
+  width: 2px;
+  background-color: #0f02;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+#projects .selected_item>div {
+  width: 3px;
+  background-color: #0f0e;
+
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+#projects .select_item>span {
+  width: 100%;
+  padding: 5px 2px 5px 6px;
+  background-color: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+#projects .selected_item>span {
+  width: 100%;
+  padding: 5px 2px 5px 5px;
+  background-color: #0f02;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+#projects .content {
+  width: 100%;
+}
+
+
+#projects .project_container{
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow-x: auto;
+}
+#projects .project_container::before {
+  content: "";
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(to right, #18181b, #18181baa, #18181b00);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+#projects .project_container::after {
+  content: "";
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(to left, #18181b, #18181baa, #18181b00);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+
+#projects .card_area {
+  padding: 10px 20px 20px 20px;
+  width: 100%;
+  height: 30vh;
+  border-radius: 6px;
+  background-color: #0f02;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  overflow: auto;
+  position: relative;
+}
+
+#projects .card {
+  margin: 0 var(--padding);
+  min-width: 280px;
+  height: 100%;
+  border: 1px solid #0f02;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #0f08;
+
+  position: relative;
+}
+#projects .background {
+  width: 60%;
+  height: 100%;
+
+  border: 1px solid #0f02;
+  border-radius: 5px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  object-fit: cover;
+  overflow: hidden;
+}
+#projects .background>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+}
+#projects .background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0003;
+}
+#projects .details {
+  padding: 5px;
+  width: 60%;
+  height: 100%;
+
+  font-size: smaller;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 4px;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+
+}
+#projects .name {
+  padding-right: 2px;
+  color: rgb(2, 199, 2);
+  font-weight: bolder;
+  text-shadow: 0 0 5px #000;
+  text-align: end;
+}
+#projects .excerpt {
+  padding: 5px;
+  height: 80%;
+  font-size: smaller;
+
+  border: 1px solid #0f02;
+  border-radius: 5px;
+  background-color: #18181b;
+  box-shadow: 0 0 5px #0f08;
+
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+}
+#projects .text {
+  animation: moveUp 25s linear infinite;
+}
+#projects .card_area button {
+  text-transform: none;
+  font-size: smaller;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    text-shadow: 0 1px 3px #0f0a;
+    transform: translateY(100%);
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0 3px 2px #0f0d;
+    transform: translateY(-100%);
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  #projects .container {
+    flex-direction: column;
+  }
+  #projects  nav.nav_bar {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    gap: 5px
+  }
+
+  #projects .project_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  #projects .select_item>div {
+    width: 100%;
+    height: 2px;
+  }
+  #projects .selected_item>div {
+    width: 100%;
+    height: 3px;
+  }
+}

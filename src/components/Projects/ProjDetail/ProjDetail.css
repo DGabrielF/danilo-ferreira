@@ -1,0 +1,255 @@
+#project_details {
+  padding: var(--padding);
+  width: 90vw;
+  max-width: calc(var(--max-width) + 30px);
+
+  border-radius: 5px;
+  background-color: var(--background);
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 10px black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+
+  overflow: hidden;
+}
+
+
+#project_details button.close {
+  padding: 0;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 5px;
+  right: 5px;
+
+  cursor: pointer;
+}
+
+#project_details button.close:hover {
+  border-radius: 5px;
+  background-color: #0f04;
+  box-shadow: 0 0 3px #0f0a;
+}
+
+#project_details button.close::after {
+  content: "Fechar";
+  padding: 2px 10px;
+
+  text-wrap: nowrap;
+  color: var(--primary-color);
+  font-weight: 900;
+  text-shadow: 0 0 10px var(--primary-color);
+
+  border-radius: 15px;
+  background-color: #4442;
+  box-shadow: 0 0 2px #4442;
+
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-110%, -50%);
+}
+
+#project_details button.close:hover::after {
+  display: block;
+}
+
+#project_details h1,
+#project_details h2 {
+  width: calc(100% - 2 * var(--padding));
+  text-align: center;
+
+  padding: 10px;
+  animation: wordsExplosion 10s infinite;
+  overflow: hidden;
+}
+
+#project_details .description {
+  width: 100%;
+  padding: var(--padding);
+
+  text-align: justify;
+
+  position: relative;
+}
+
+#project_details .description button{
+  padding: 5px 10px;
+  position: absolute;
+  top: calc(100% + 3px - var(--padding));
+  right: 0;
+}
+
+#project_details .description button::after {
+  content: "link externo";
+  padding: 2px 10px;
+
+  text-wrap: nowrap;
+  color: var(--primary-color);
+  font-weight: 900;
+  text-shadow: 0 0 10px var(--primary-color);
+
+  border-radius: 15px;
+  background-color: #4442;
+  box-shadow: 0 0 2px #4442;
+
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-110%, -50%);
+}
+
+#project_details .description button:hover::after {
+  display: block;
+}
+
+
+#project_details .list_area {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#project_details [class="area"] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#project_details ul {
+  padding: calc(var(--padding) / 2);
+  width: 95%;
+  max-height: 20vh;
+
+  border-radius: var(--border-radius);
+  background-color: var(--body-background);
+  box-shadow: 0 0 5px var(--body-background);
+
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  overflow: auto;
+
+  animation: signalNoise 12s infinite;
+}
+
+#project_details .list_area ul{
+  flex-direction: column;
+}
+
+#project_details li {
+  padding: 2px 5px;
+  width: 100%;
+
+  border-radius: var(--border-radius);
+
+  list-style: none;
+  background-color: #0005;
+}
+
+#project_details .list_area .vertical_line {
+  display: block;
+}
+
+#project_details .list_area .horizontal_line {
+  display: none;
+}
+
+#project_details .class_area {
+  width: auto;
+  min-height: 132px;
+
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#project_details .member_card {
+  width: 270px;
+  height: 120px;
+
+  border-radius: var(--border-radius);
+
+  display: flex;
+  align-items: center;
+}
+
+#project_details .class_area .profile {
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#project_details .class_area li div {
+  padding: 5px 3px;
+  width: 200px;
+  height: 100%;
+}
+
+#project_details .class_area .links {
+  padding: 10px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: transparent;
+  box-shadow: none;
+}
+
+#project_details .class_area .link_item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+#project_details .class_area .link_item img {
+  width: 20px;
+  height: 20px;
+}
+#project_details .class_area .link_item span {
+  font-size: 10px;
+  text-wrap: nowrap;
+}
+
+@media screen and (max-width: 549px) {
+  #project_details .list_area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #project_details .list_area .horizontal_line {
+    display: block;
+  }
+  #project_details .list_area .vertical_line {
+    display: none;
+  }
+}

@@ -1,35 +1,9 @@
-import { AboutMe } from "../components/AboutMe/AboutMe.js";
-import { Contacts } from "../components/Contacts/Contacts.js";
-import { Experience } from "../components/Experience/Experience.js";
-import { Intro } from "../components/Intro/Intro.js";
-import { Projects } from "../components/Projects/Projects.js";
-import { TopMenu } from "../components/TopMenu/TopMenu.js";
-import { personalData } from "../database/personal.js";
-import { structureData } from "../database/structure.js";
-import { setElementsPosition } from "./actions.js";
-import { updateExperienceData, createSeatedItem, toggleScrollTopButton } from "./views.js"
-export const state = {
-  isOpen: {
-    topMenu: false,
-    projectDetail: false
+export const personalData = {
+  person: {
+    fullName: "Danilo Gabriel Fagundes de Oliveira Ferreira",
+    birth: "11/05/1992",
+    maritalStatus: "casado",
   },
-  selected: {
-    company: {},
-    project: {}
-  },
-  fullName: "Danilo Gabriel Fagundes de Oliveira Ferreira",
-  jokes: [
-    "Aprendiz de mago.",
-    "Aspirante à toque de Midas.",
-    "Pokemon em evolução.",
-    "Comece onde está.",
-    "Use o que você tem.",
-    "Faça o que você pode.",
-    "Uma metamorfose ambulante...",
-    "Que tal um pouco de alquimia?",
-    "O obstáculo é o caminho!",
-    "Não existe atalhos no mundo ninja..."
-  ],
   usedTools: [
     "Smtplib",
     "Tkinter",
@@ -49,10 +23,6 @@ export const state = {
     "Git",
     "Github"
   ],
-  fallingAnimation: {
-    interval: 1000,
-    duration: 10000,
-  },
   companies: [
     {
       alias: "LABCMI",
@@ -339,70 +309,4 @@ export const state = {
     {"name": "Linkedin", "url": "https://www.linkedin.com/in/danilogabriel-ferreira/", "text": "/danilo-gabriel-ferreira-092457127"},
     {"name": "Facebook", "url": "https://www.facebook.com/danilo.ferreira.186590", "text": "/danilo.ferreira.186590"}
   ],
-}
-
-function init() {
-  const body = document.querySelector("body");
-
-  window.addEventListener("scroll", function() {
-    toggleScrollTopButton();
-  });
-
-  const topMenu = TopMenu.create({
-    options: structureData.sections,
-    showMenuIcon: structureData.icons.listMenu,
-    hideMenuIcon: structureData.icons.close,
-  });
-  body.appendChild(topMenu);
-
-  const introData = structureData.sections.find(item => item.href === "intro");
-  const intro = Intro.create({
-    data: introData,
-    fullName: personalData.person.fullName,
-  })
-  body.appendChild(intro);
-
-  const aboutMeData = structureData.sections.find(item => item.href === "about_me");
-  const aboutMe = AboutMe.create({
-    data: aboutMeData,
-  });
-  body.appendChild(aboutMe);
-  
-  const experienceData = structureData.sections.find(item => item.href === "experience");
-  const projectsData = structureData.sections.find(item => item.href === "projects");
-  const experience = Experience.create({
-    data: experienceData,
-    projects: projectsData.content.projects,
-  });
-  body.appendChild(experience);
-  
-  const projects = Projects.create({
-    data: projectsData,
-  });
-  body.appendChild(projects);
-
-  const contactData = structureData.sections.find(item => item.href === "contact");
-  const contacts = Contacts.create({
-    data: contactData,
-  })
-  body.appendChild(contacts);
-  // TODO
-
-  state.selected.company = state.companies[0]
-  updateExperienceData(state, state.selected.company.alias)
-
-
-  const animationArea = document.querySelector(".ferris_wheel")
-  const arrayWithPosition =  [...state.contacts];
-  setElementsPosition(arrayWithPosition);
-  arrayWithPosition.forEach( item => {
-    const seatedItems = createSeatedItem(item);
-    animationArea.appendChild(seatedItems);
-  })
-
-  state.selected.project = state.projects[0];
-}
-
-init();
-
-
+};

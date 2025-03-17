@@ -19,27 +19,6 @@
   }
 }
 
-.profile_image{
-  min-height: 150px;
-  min-width: 100px;
-  border-radius: 50%;
-  border: 1px solid #0f07;
-  background-image: url("../assets/images/photo.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-  position: relative;
-}
-.profile_image:hover{
-  background-image: url("../assets/images/profile.jpg");
-  transition: 1s ease;
-  transform: translate(2px, -4px);
-}
-.profile_image:hover{
-  box-shadow: 0 0 5px #0f07;
-}
-
 .falling_words{
   height: 30vw;
   border-radius: 5px;
@@ -67,7 +46,7 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 12px;
   font-weight: 500;
-  color: #0f0;
+  color: var(--primary-color);
   position: absolute;
   animation: moveDown 10s linear infinite;
   transform: translateX(-50%);

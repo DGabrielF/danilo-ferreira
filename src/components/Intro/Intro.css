@@ -1,0 +1,116 @@
+#intro {
+  align-items: flex-start;
+
+}
+
+#intro .occuped_area {
+  margin: 0 auto;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  max-width: 930px;
+
+  background-color: #18181b;
+  box-shadow: 0 0 15px var(--background);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#intro .greeting {
+  color: var(--secundary-color);
+}
+
+#intro .name {
+  margin-top: var(--padding);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: xx-large;
+
+  display: flex;
+  align-items: center;
+  gap: var(--padding);
+}
+#intro .last_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: growLetters 10s infinite;
+  transition: font-size 0.1s ease-in-out;
+}
+
+#intro .subtitle {
+  width: 100%;
+  height: 38px;
+  overflow: hidden;
+  position: relative;
+}
+
+#intro .joke {
+  letter-spacing: 1.2px;
+  font-size: x-large;
+  animation: moveDownAndHide 10s infinite;
+  transition: top 0.5s ease-in-out;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+#intro .excerpt {
+  margin-top: var(--padding);
+  max-width: 486px;
+}
+
+.to_top {
+  width: 23px;
+  height: 23px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  box-shadow: 0 0 3px #0f0a;
+  background-color: #18181b;
+
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 5;
+  cursor: pointer;
+  animation: shakeEnergyDischarge 10s infinite
+}
+.to_top>svg {
+  animation: completeSpin 10s infinite;
+}
+.to_top:hover {
+  outline: 1px solid #0f0a;
+  background-color: #111;
+}
+.to_top:active {
+  background-color: #444;
+}
+.to_top::after {
+  content: "Para o topo";
+  padding: 2px 10px;
+
+  text-wrap: nowrap;
+  color: var(--primary-color);
+  font-weight: 900;
+  text-shadow: 0 0 10px #0f0;
+
+  border-radius: 15px;
+  background-color: #4442;
+  box-shadow: 0 0 2px #4442;
+
+  display: none;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-110%, -50%);
+}
+.to_top:hover::after {
+  display: block;
+}

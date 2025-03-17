@@ -1,0 +1,124 @@
+#about_me {
+  align-items: flex-start;
+}
+
+#about_me .occuped_area {
+  margin: 0 auto;
+  padding: var(--padding);
+  height: 100%;
+  width: 100%;
+  max-width: 930px;
+
+  background-color: var(--background);
+  box-shadow: 0 0 15px var(--background);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--padding);
+}
+
+#about_me .carousel {
+  width: 80%;
+  height: 290px;
+  border: 1px solid var(--body-background);
+  box-shadow: 0 0 10px var(--body-background);
+  border-radius: var(--border-radius);
+}
+
+#about_me .carousel .content {
+  height: 100%;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+#about_me .carousel .content .carousel-item {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+#about_me .carousel .content .carousel-item div {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+#about_me .carousel .content span {
+  width: 100%;
+  padding: var(--padding);
+  
+  text-align: center;
+  text-transform: uppercase;
+  
+  display: block;
+  background-color: var(--body-background);
+}
+
+#about_me .carousel .content p {
+  padding: var(--padding);
+  width: auto;
+
+}
+
+#about_me .carousel .carousel_menu {
+  padding: var(--padding);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  background-color: var(--body-background);
+}
+
+#about_me .personal_info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_image{
+  margin: auto;
+  height: 150px;
+  width: 100px;
+
+  border-radius: 50%;
+  border: 1px solid #0f07;
+  background-image: url("../../assets/images/photo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  position: relative;
+}
+.profile_image:hover{
+  background-image: url("../../assets/images/profile.jpg");
+  transition: 1s ease;
+  transform: translate(2px, -4px);
+  box-shadow: 0 0 5px #0f07;
+}
+
+.falling_words{
+  height: 30vw;
+  width: 100%;
+  border-radius: 5px;
+  background-image: url("../../assets/images/matrix-bg-400-x-267.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: 549px) {
+  #about_me .personal_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: var(--padding);
+  }
+
+  #about_me .carousel {
+    width: 100%;
+    height: 290px;
+  }
+}

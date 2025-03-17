@@ -1,14 +1,3 @@
-export function setGreetings() {
-  const currentHour = new Date().getHours();
-  if (currentHour >= 0 && currentHour < 12) {
-    return "Bom dia";
-  } else if (currentHour >= 12 && currentHour < 18) {
-    return "Boa tarde";
-  } else {
-    return "Boa noite";
-  }
-}
-
 export function setLastName(fullName) {
   const fullNameArray = fullName.split(" ");
   while (true) {

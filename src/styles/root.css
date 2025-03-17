@@ -1,0 +1,14 @@
+:root {
+  /* COLORS */
+  --background: #18181b;
+  --body-background: #101010;
+  --primary-color: #00ff00;
+  --secundary-color: #aaffaa;
+
+  /* SPACING */
+  --padding: 15px;
+  --border-radius: 15px;
+  --top-menu-height: 65px;
+  --section-height: calc(100vh - 65px);
+  --max-width: 930px;
+}

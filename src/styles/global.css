@@ -6,6 +6,18 @@
 @import url("projects.css");
 @import url("project_deatils.css");
 @import url("contact.css");
+@import url("root.css");
+
+@import url("../components/Carousel/Carousel.css");
+@import url("../components/SectionTitle/SectionTitle.css");
+
+@import url("../components/TopMenu/TopMenu.css");
+@import url("../components/Intro/Intro.css");
+@import url("../components/AboutMe/AboutMe.css");
+@import url("../components/Experience/Experience.css");
+@import url("../components/Projects/Projects.css");
+@import url("../components/Projects/ProjDetail/ProjDetail.css");
+@import url("../components/Contacts/Contacts.css");
 
 * {
   margin: 0;
@@ -20,23 +32,30 @@
   display: none;
 }
 .horizontal_line {
-  margin: 0 auto;
+  display: block;
+  margin: var(--padding) auto 0 auto;
   width: 100%;
   height: 2px;
-  background-color: #0f0;
+  background-color: var(--primary-color);
   animation: stretchingHorizontalSeparator 20s infinite;
+}
+
+.vertical_line {
+  display: flex;
+  width: 2px;
+  min-height: 100%;
+  background-color: var(--primary-color);
 }
 
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #18181b;
+  background-color: var(--body-background);
 }
 
 section {
-  padding: 0 15px;
-  min-height: 100vh;
+  padding: 0 var(--padding);
 
   display: flex;
   flex-direction: column;
@@ -44,6 +63,9 @@ section {
   gap: 20px;
 
   position: relative;
+
+  height: var(--section-height);
+  color: var(--primary-color);
 }
 
 /* Anchors */
@@ -61,7 +83,7 @@ button {
   padding: 4px 6px;
   text-transform: uppercase;
 
-  border: 1px solid #0f0a;
+  border: 2px solid #0f0a;
   border-radius: 6px;
   background-color: #18181b;
 

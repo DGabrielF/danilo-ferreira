@@ -1,50 +1,5 @@
-#project_details {
-  padding: 6px;
-  width: 90vw;
-  min-height: 90vh;
-  max-height: 90vh;
-
-  border: 1px solid #0f0;
-  border-radius: 5px;
-  background-color: #18181b;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5px;
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 15;
-
-  overflow-y: auto;
-  overflow-x: hidden;
-}
 #project_details.hide{
   display: none;
-}
-#project_details * {
-  text-align: justify;
-}
-#project_details [class$="title"] {
-  animation: wordsExplosion 10s infinite;
-}
-#project_details ul{
-  padding: 1vh 1vw;
-  width: 100%;
-
-  border-radius: 5px;
-  background-color: #0005;
-  box-shadow: 0 0 5px #000a;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  animation: signalNoise 10s infinite;
 }
 
 .fade {

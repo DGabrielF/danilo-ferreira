@@ -185,7 +185,7 @@
   }
   51% {
     transform: rotate(-3deg);
-    letter-spacing: 20px;
+    letter-spacing: 10px;
   }
   52%{
     letter-spacing: normal;
