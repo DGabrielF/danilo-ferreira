@@ -3,6 +3,11 @@
   align-items: flex-start;
 }
 
+#intro .occupied_area {
+  padding-top: var(--padding);
+  justify-content: center;
+}
+
 #intro .greeting {
   color: var(--secundary-color);
 }

@@ -152,13 +152,13 @@ export const structureData = {
               end: "10/03/2025"
             },
             activities: [
+              "Sistema para gerenciamento de datas de validade",
+              "Conferente de Logística",
+              "Elaboração de documentos de padronização",
               "Atendimento ao cliente",
               "Operador de caixa",
               "Operador de máquinas",
-              "Conferente de Logística",
               "Estoquista",
-              "Sistema para gerenciamento de datas de validade",
-              "Elaboração de documentos de padronização",
             ],
             projects: [
               "ExpDateWebApp",

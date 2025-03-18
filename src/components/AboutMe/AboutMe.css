@@ -59,7 +59,7 @@
   flex-direction: row;
 }
 
-.profile_image{
+#about_me .profile_image{
   margin: auto;
   height: 150px;
   width: 100px;
@@ -73,14 +73,14 @@
   object-fit: cover;
   position: relative;
 }
-.profile_image:hover{
+#about_me .profile_image:hover{
   background-image: url("../../assets/images/profile.jpg");
   transition: 1s ease;
   transform: translate(2px, -4px);
   box-shadow: 0 0 5px #0f07;
 }
 
-.falling_words{
+#about_me .falling_words {
   height: 30vw;
   max-height: 390px;
   width: 100%;
@@ -92,6 +92,47 @@
   overflow: hidden;
 }
 
+.falling_words::before {
+  content: '';
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00000080;
+}
+.falling_words:hover::before {
+  background-color: #00000085;
+}
+.matrix-char {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--primary-color);
+  position: absolute;
+  animation: moveDown 10s linear infinite;
+  transform: translateX(-50%);
+}
+
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    text-shadow: 0 -1px 3px #0f0a;
+    top: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0 -3px 2px #0f0d;
+    top:100%
+  }
+}
 
 @media only screen and (max-width: 549px) {
   #about_me .personal_info {

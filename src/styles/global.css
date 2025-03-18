@@ -1,13 +1,9 @@
 @import url("animations.css");
-@import url("top-menu.css");
-@import url("about-me.css");
-@import url("experience.css");
-@import url("projects.css");
-@import url("project_deatils.css");
 @import url("root.css");
 
 @import url("../components/Carousel/Carousel.css");
 @import url("../components/SectionTitle/SectionTitle.css");
+@import url("../components/Fade/Fade.css");
 
 @import url("../components/TopMenu/TopMenu.css");
 @import url("../components/Intro/Intro.css");

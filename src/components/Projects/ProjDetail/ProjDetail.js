@@ -1,4 +1,5 @@
 import { structureData } from "../../../database/structure.js";
+import { Fade } from "../../Fade/Fade.js";
 
 export const ProjDetail = {
   create: () => {},
@@ -84,10 +85,11 @@ ProjDetail.update = (project) => {
 
 ProjDetail.show = () => {
   ProjDetail.self.style.display = "flex";
+  Fade.show();
 };
 
 ProjDetail.hide = () => {
-  ProjDetail.self.style.display = "none";
+  Fade.close();
 };
 
 function createGoalItems() {

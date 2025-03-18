@@ -2,6 +2,7 @@
   padding: var(--padding);
   width: 90vw;
   max-width: calc(var(--max-width) + 30px);
+  max-height: 90vh;
 
   border-radius: 5px;
   background-color: var(--background);
@@ -12,13 +13,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
+
 
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 15;
+  z-index: 12;
 
   overflow: hidden;
 }
@@ -73,6 +74,9 @@
 
 #project_details h1,
 #project_details h2 {
+  height: 43px;
+  max-height: 43px;
+  min-height: 43px;
   width: calc(100% - 2 * var(--padding));
   text-align: center;
 
@@ -82,19 +86,25 @@
 }
 
 #project_details .description {
+  max-height: calc((90vh - var(--padding) - var(--padding)) / 3);
   width: 100%;
   padding: var(--padding);
+  padding-bottom: 0;
 
   text-align: justify;
 
   position: relative;
+  overflow: auto;
 }
 
 #project_details .description button{
+  width: 120px;
+  margin-top: 5px;
   padding: 5px 10px;
-  position: absolute;
-  top: calc(100% + 3px - var(--padding));
-  right: 0;
+
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 #project_details .description button::after {
@@ -124,13 +134,13 @@
 
 
 #project_details .list_area {
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
 #project_details [class="area"] {
+  max-height: calc((90vh - var(--padding) - var(--padding)) / 3);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -244,6 +254,22 @@
   #project_details .list_area {
     display: flex;
     flex-direction: column;
+  }
+
+  #project_details .description {
+    max-height: calc((90vh - var(--padding) - var(--padding)) / 4);
+  }
+
+  #project_details [class="area"] {
+    max-height: calc((90vh - var(--padding) - var(--padding)) / 4);
+  }
+
+  #project_details ul {
+    width: 100%;
+  }
+
+  #project_details .horizontal_line {
+    margin: 5px 0;
   }
 
   #project_details .list_area .horizontal_line {

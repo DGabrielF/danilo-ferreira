@@ -1,6 +1,7 @@
 import { AboutMe } from "../components/AboutMe/AboutMe.js";
 import { Contacts } from "../components/Contacts/Contacts.js";
 import { Experience } from "../components/Experience/Experience.js";
+import { Fade } from "../components/Fade/Fade.js";
 import { Intro } from "../components/Intro/Intro.js";
 import { Projects } from "../components/Projects/Projects.js";
 import { TopMenu } from "../components/TopMenu/TopMenu.js";
@@ -347,6 +348,9 @@ function init() {
   window.addEventListener("scroll", function() {
     toggleScrollTopButton();
   });
+
+  const fade = Fade.create();
+  body.appendChild(fade)
 
   const topMenu = TopMenu.create({
     options: structureData.sections,
