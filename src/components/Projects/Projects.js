@@ -11,19 +11,19 @@ Projects.create = ({data}) => {
   Projects.self = document.createElement("section");
   Projects.self.id = "projects";
 
-  Projects.occupedArea = document.createElement("div");
-  Projects.occupedArea.classList.add("occuped_area");
-  Projects.self.appendChild(Projects.occupedArea);
+  Projects.occupiedArea = document.createElement("div");
+  Projects.occupiedArea.classList.add("occupied_area");
+  Projects.self.appendChild(Projects.occupiedArea);
 
   const title = SectionTitle.create({
     order: Projects.data.order,
     title: Projects.data.title,
   })
-  Projects.occupedArea.appendChild(title);
+  Projects.occupiedArea.appendChild(title);
 
   Projects.container = document.createElement("div");
   Projects.container.classList.add("container");
-  Projects.occupedArea.appendChild(Projects.container)
+  Projects.occupiedArea.appendChild(Projects.container)
   
   createSideMenu();
   updateSideMenu(Projects.data.content.types[0]);

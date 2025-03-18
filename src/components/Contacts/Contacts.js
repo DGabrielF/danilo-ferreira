@@ -10,19 +10,19 @@ Contacts.create = ({data}) => {
   Contacts.self = document.createElement("section");
   Contacts.self.id = "contact";
 
-  Contacts.occupedArea = document.createElement("div");
-  Contacts.occupedArea.classList.add("occuped_area");
-  Contacts.self.appendChild(Contacts.occupedArea);
+  Contacts.occupiedArea = document.createElement("div");
+  Contacts.occupiedArea.classList.add("occupied_area");
+  Contacts.self.appendChild(Contacts.occupiedArea);
   
   const title = SectionTitle.create({
     order: Contacts.data.order,
     title: Contacts.data.title,
   })
-  Contacts.occupedArea.appendChild(title);
+  Contacts.occupiedArea.appendChild(title);
 
   Contacts.content = document.createElement("div");
   Contacts.content.classList.add("content");
-  Contacts.occupedArea.appendChild(Contacts.content);
+  Contacts.occupiedArea.appendChild(Contacts.content);
 
   createEndText();
 

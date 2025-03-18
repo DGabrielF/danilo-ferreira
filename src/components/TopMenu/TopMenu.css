@@ -15,16 +15,16 @@
   z-index: 10;
 }
 
-#top_menu .occuped_area {
-  margin: auto;
-  padding: var(--padding);
-  width: 100%;
-  max-width: var(--max-width);
+#top_menu .occupied_area {
+  padding-top: var(--padding);
   height: 35px;
 
-  display: flex;
-  align-items: center;
+  box-shadow: none;
+
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  gap: 0;
 }
 
 #top_menu .octagon_border {
@@ -107,7 +107,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 550px) {
   #top_menu .menu {
     height: auto;
     padding: 10px;

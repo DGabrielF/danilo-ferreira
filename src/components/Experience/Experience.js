@@ -19,18 +19,18 @@ Experience.create = ({data, projects}) => {
   Experience.self = document.createElement("section");
   Experience.self.id = "experience",
 
-  Experience.occupedArea = document.createElement("div");
-  Experience.occupedArea.classList.add("occuped_area");
-  Experience.self.appendChild(Experience.occupedArea)
+  Experience.occupiedArea = document.createElement("div");
+  Experience.occupiedArea.classList.add("occupied_area");
+  Experience.self.appendChild(Experience.occupiedArea)
   const title = SectionTitle.create({
     order: Experience.data.order,
     title: Experience.data.title,
   });
-  Experience.occupedArea.appendChild(title);
+  Experience.occupiedArea.appendChild(title);
 
   Experience.container = document.createElement("div");
   Experience.container.classList.add("container");
-  Experience.occupedArea.appendChild(Experience.container);
+  Experience.occupiedArea.appendChild(Experience.container);
 
   createSideMenu();
   updateSideMenu(Experience.data.content.companies[0]);

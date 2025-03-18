@@ -2,23 +2,6 @@
   align-items: flex-start;
 }
 
-#about_me .occuped_area {
-  margin: 0 auto;
-  padding: var(--padding);
-  height: 100%;
-  width: 100%;
-  max-width: 930px;
-
-  background-color: var(--background);
-  box-shadow: 0 0 15px var(--background);
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--padding);
-}
-
 #about_me .carousel {
   width: 80%;
   height: 290px;

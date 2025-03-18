@@ -13,19 +13,19 @@ AboutMe.create = ({data}) => {
   AboutMe.self = document.createElement("section");
   AboutMe.self.id = "about_me";
   
-  AboutMe.occupedArea = document.createElement("div");
-  AboutMe.occupedArea.classList.add("occuped_area");
-  AboutMe.self.appendChild(AboutMe.occupedArea)
+  AboutMe.occupiedArea = document.createElement("div");
+  AboutMe.occupiedArea.classList.add("occupied_area");
+  AboutMe.self.appendChild(AboutMe.occupiedArea)
 
   const title = SectionTitle.create({
     order: data.order,
     title: data.title,
   })
-  AboutMe.occupedArea.appendChild(title);
+  AboutMe.occupiedArea.appendChild(title);
 
   AboutMe.personalInfo = document.createElement("div");
   AboutMe.personalInfo.classList.add("personal_info");
-  AboutMe.occupedArea.appendChild(AboutMe.personalInfo);
+  AboutMe.occupiedArea.appendChild(AboutMe.personalInfo);
 
   createCarousel(data.content.carousel);
 
@@ -35,7 +35,7 @@ AboutMe.create = ({data}) => {
 
   const fallingWordsArea = document.createElement("div");
   fallingWordsArea.classList.add("falling_words");
-  AboutMe.occupedArea.appendChild(fallingWordsArea);
+  AboutMe.occupiedArea.appendChild(fallingWordsArea);
 
   fallingWordsAnimation(data.content.usedTools, AboutMe.duration);
   setInterval(() => {

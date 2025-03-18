@@ -9,14 +9,14 @@ Intro.create = ({data, fullName}) => {
   Intro.self = document.createElement("section");
   Intro.self.id = "intro";
 
-  const occupedArea = document.createElement("div");
-  occupedArea.classList.add("occuped_area");
-  Intro.self.appendChild(occupedArea);
+  const occupiedArea = document.createElement("div");
+  occupiedArea.classList.add("occupied_area");
+  Intro.self.appendChild(occupiedArea);
   
   const greeting = document.createElement("p");
   greeting.classList.add("greeting");
   greeting.textContent = `${setGreetings()}, meu nome é`;
-  occupedArea.appendChild(greeting);  
+  occupiedArea.appendChild(greeting);  
 
   const name = document.createElement("h1");
   name.classList.add("name");
@@ -36,7 +36,7 @@ Intro.create = ({data, fullName}) => {
 
   const subtitle = document.createElement("h2");
   subtitle.classList.add("subtitle");
-  occupedArea.appendChild(subtitle);
+  occupiedArea.appendChild(subtitle);
 
   const joke = document.createElement("span");
   joke.classList.add("joke")
@@ -49,7 +49,7 @@ Intro.create = ({data, fullName}) => {
   const excerpt = document.createElement("span");
   excerpt.classList.add("excerpt");
   excerpt.textContent = Intro.data.content.excerpt;
-  occupedArea.appendChild(excerpt);
+  occupiedArea.appendChild(excerpt);
 
   return Intro.self;
 }

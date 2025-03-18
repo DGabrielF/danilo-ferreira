@@ -19,9 +19,9 @@ TopMenu.create = ({options, showMenuIcon, hideMenuIcon}) => {
   TopMenu.self = document.createElement("div");
   TopMenu.self.id = "top_menu";
 
-  TopMenu.occupedArea = document.createElement("div");
-  TopMenu.occupedArea.classList.add("occuped_area");
-  TopMenu.self.appendChild(TopMenu.occupedArea);
+  TopMenu.occupiedArea = document.createElement("div");
+  TopMenu.occupiedArea.classList.add("occupied_area");
+  TopMenu.self.appendChild(TopMenu.occupiedArea);
 
   createLogo("D");
 
@@ -45,7 +45,7 @@ function createToggleButton() {
     }
   });
   toggleMenuButton.classList.add("toggle_menu");
-  TopMenu.occupedArea.appendChild(toggleMenuButton);
+  TopMenu.occupiedArea.appendChild(toggleMenuButton);
 
   const buttonImage = document.createElement("img");
   buttonImage.src = TopMenu.icons.menu.show;
@@ -61,11 +61,11 @@ function createLogo(acronym) {
   octaconArea.textContent = acronym;
   borderArea.appendChild(octaconArea);
 
-  TopMenu.occupedArea.appendChild(borderArea)
+  TopMenu.occupiedArea.appendChild(borderArea)
 }
 
 function createOptions() {
-  const occupedArea = TopMenu.self.querySelector(".occuped_area");
+  const occupiedArea = TopMenu.self.querySelector(".occupied_area");
 
   const menuArea = document.createElement("nav");
   menuArea.classList.add("menu");
@@ -94,7 +94,7 @@ function createOptions() {
   curriculumButton.classList.add("curriculum");
   menuArea.appendChild(curriculumButton);
 
-  occupedArea.appendChild(menuArea);
+  occupiedArea.appendChild(menuArea);
 
 }
 

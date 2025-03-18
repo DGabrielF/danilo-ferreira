@@ -3,22 +3,6 @@
   align-items: flex-start;
 }
 
-#intro .occuped_area {
-  margin: 0 auto;
-  padding: 15px;
-  height: 100%;
-  width: 100%;
-  max-width: 930px;
-
-  background-color: #18181b;
-  box-shadow: 0 0 15px var(--background);
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
 #intro .greeting {
   color: var(--secundary-color);
 }

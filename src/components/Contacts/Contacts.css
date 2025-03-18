@@ -1,23 +1,5 @@
 #contact {
-  margin-bottom: var(--padding);
-}
-
-#contact .occuped_area {
-  margin: 0 auto;
-  padding: var(--padding);
-  height: 100%;
-  width: 100%;
-  max-width: 930px;
-  
-  background-color: var(--background);
-  box-shadow: 0 0 15px var(--background);
-  
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--padding);
+  margin-bottom: calc(var(--padding) + var(--top-menu-height));;
 }
 
 .end_text {
