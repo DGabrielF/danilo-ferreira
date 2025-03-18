@@ -7,8 +7,7 @@ import { Projects } from "../components/Projects/Projects.js";
 import { TopMenu } from "../components/TopMenu/TopMenu.js";
 import { personalData } from "../database/personal.js";
 import { structureData } from "../database/structure.js";
-import { setElementsPosition } from "./actions.js";
-import { updateExperienceData, createSeatedItem, toggleScrollTopButton } from "./views.js"
+
 export const state = {
   isOpen: {
     topMenu: false,
@@ -390,23 +389,15 @@ function init() {
     data: contactData,
   })
   body.appendChild(contacts);
-  // TODO
-
-  state.selected.company = state.companies[0]
-  updateExperienceData(state, state.selected.company.alias)
-
-
-  const animationArea = document.querySelector(".ferris_wheel")
-  const arrayWithPosition =  [...state.contacts];
-  setElementsPosition(arrayWithPosition);
-  arrayWithPosition.forEach( item => {
-    const seatedItems = createSeatedItem(item);
-    animationArea.appendChild(seatedItems);
-  })
-
-  state.selected.project = state.projects[0];
 }
 
 init();
 
-
+function toggleScrollTopButton() {
+  var scrollTopButton = document.querySelector(".to_top");
+  if (window.scrollY > 200) {
+      scrollTopButton.style.display = "flex";
+  } else {
+      scrollTopButton.style.display = "none";
+  }
+}
