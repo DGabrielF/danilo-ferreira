@@ -5,7 +5,6 @@
 @import url("experience.css");
 @import url("projects.css");
 @import url("project_deatils.css");
-@import url("contact.css");
 @import url("root.css");
 
 @import url("../components/Carousel/Carousel.css");
@@ -95,7 +94,7 @@ button {
 }
 button:hover {
   text-shadow: 0 0 2px #0f0;
-  border: 1px solid #0f0;
+  border: 2px solid #0f0;
   background-color: #0f03;
   transition: 0.3s ease;
 }

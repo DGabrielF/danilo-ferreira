@@ -39,21 +39,26 @@ Projects.create = ({data}) => {
 function createSideMenu() {
   const sideMenu = document.createElement("nav");
   sideMenu.classList.add("nav_bar");
-  for (const project of Projects.data.content.types) {
+  for (const type of Projects.data.content.types) {
+    const typeFound = Projects.data.content.projects.find(project => 
+      project.type === type.slug
+    )
+    if (!typeFound) continue;
+
     const div = document.createElement("div");
     div.addEventListener("click", () => {
-      updateSideMenu(project);
-      updateContent(project);
+      updateSideMenu(type);
+      updateContent(type);
     });
     div.classList.add("project_item");
     div.classList.add("select_item");
-    div.id = project.slug; 
+    div.id = type.slug; 
 
     const addon = document.createElement("div");
     div.appendChild(addon);
 
     const text = document.createElement("span");
-    text.textContent = project.name;
+    text.textContent = type.name;
     div.appendChild(text);
 
     sideMenu.appendChild(div);
