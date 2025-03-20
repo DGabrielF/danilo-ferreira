@@ -40,10 +40,10 @@
 #intro .joke {
   letter-spacing: 1.2px;
   font-size: x-large;
-  animation: moveDownAndHide 10s infinite;
   transition: top 0.5s ease-in-out;
   position: absolute;
   transform: translateY(-50%);
+  animation: moveDownAndHide 10s infinite;
 }
 
 #intro .excerpt {

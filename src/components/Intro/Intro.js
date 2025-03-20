@@ -31,7 +31,7 @@ Intro.create = ({data, fullName}) => {
   lastName.textContent = setName(fullName);
   setInterval(() => {
     lastName.textContent = setName(fullName);
-  }, 9900);
+  }, 10000);
   name.appendChild(lastName);
 
   const subtitle = document.createElement("h2");
@@ -43,7 +43,7 @@ Intro.create = ({data, fullName}) => {
   joke.textContent = setRandomArrayElement(data.content.jokes);
   setInterval(() => {
     joke.textContent = setRandomArrayElement(data.content.jokes);
-  }, 9900);
+  }, 10000);
   subtitle.appendChild(joke);
 
   const excerpt = document.createElement("span");
